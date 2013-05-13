@@ -1,0 +1,155 @@
+@import "colors"
+@import "sizes"
+
+@import "compass"
+@import "bootstrap"
+@import "bootstrap-responsive"
+@import "bourbon"
+
+.btn-primary
+  @include linear-gradient(top, lighten($button_primary_bg, 5%), $button_primary_bg)
+  &:hover, &:active, &.active
+    @include linear-gradient(top, darken($button_primary_bg, 5%), darken($button_primary_bg, 5%))
+
+ 
+.header
+  text-align: left
+  padding-top: 10px
+
+  h1
+    padding: 0
+    margin: 0
+    margin-left: -99999px
+
+  .logo
+    margin-top: 5px
+
+  .info
+    padding: 0 $paddingLarge
+    width: 200px
+    margin: -5px auto 0 auto
+
+  .social
+    margin-bottom: 0
+    a, a:link, a:hover, a:visited
+      color: $red
+      font-size: $fontSizeHuge
+
+    li
+      @include border-radius(50%)
+
+      width: 26px
+      height: 30px
+
+      text-align: center
+      padding: 5px 5px 0
+      margin:  0 10px
+
+.credits
+  list-style-type: none
+  color: $grayLighter
+  padding: 10px 0
+
+  li
+    margin-bottom: 10px
+
+.navbar
+  background-color: $navbarBackground
+  color: $offWhite
+  text-align: center
+  height: $navbarHeight
+  padding: $paddingLarge
+  margin-top: 10px
+
+  // for responsive nav
+  .nav
+    background-color: $navbarBackground
+
+  p
+    margin: 0
+
+.lead
+  text-align: center
+
+.sidebar
+  .details
+    margin: $paddingLarge
+    width: 90%
+    border: 1px solid $sidebar_border
+
+    strong
+      background-color: $sidebar_header_bg
+      text-transform: uppercase
+      color: $sidebar_header_color
+      margin-bottom: 10px
+      display: block
+      padding: $paddingMini
+      text-align: center
+
+    .detail
+      padding: $paddingSmall
+      font-size: $fontSizeSmall
+
+#main
+  header
+    text-align: center
+
+.change_world
+  position: absolute
+  margin: 26px 0 0 70px
+  color: $grayLight
+  p
+    margin: -44px 0 0 24px
+  &:before
+    content: "}"
+    font-size: $baseFontSize * 4
+
+// Day Summaries
+$day_icon_unit: 100px
+
+.day_summaries
+  text-align: left
+
+.days
+  list-style-type: none
+
+  li
+    margin-bottom: $day_icon_unit/2
+
+.day_icon
+  @include border-radius(50%)
+  background-color: $day_icon_bg
+  width: $day_icon_unit
+  height: $day_icon_unit
+  text-align: center
+  color: $day_icon_color
+  padding: 10px
+  position: absolute
+  font-size: $day_icon_unit - 10
+
+.day_summary
+  margin-left: $day_icon_unit + 50px
+  .area
+    text-transform: uppercase
+    font-weight: bold
+    color: $day_area_header
+    font-size: $fontSizeHuge
+
+// Nav active states
+
+@each $page in about, register, schedule, sponsor
+  .#{$page}
+    #nav-#{$page}
+      @extend .active
+
+//## Page Specific
+
+.index
+  .details.what, .details.why
+    display: none
+
+  .hero-unit
+    background-color: $white
+    border: 1px solid $red
+    h3
+      color: $red
