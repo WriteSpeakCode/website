@@ -11,7 +11,6 @@
   &:hover, &:active, &.active
     @include linear-gradient(top, darken($button_primary_bg, 5%), darken($button_primary_bg, 5%))
 
- 
 .header
   text-align: left
   padding-top: 10px
@@ -158,3 +157,34 @@ $day_icon_unit: 100px
     border: 1px solid $red
     h3
       color: $red
+
+.sponsor
+  .accordion-heading
+    font-size: $fontSizeLarge
+
+  #sponsor_1000_header
+    a, a:visited, a:active, a:hover
+      color: $green
+
+  #sponsor_1000
+    em
+      color: $green
+      font-weight: bold
+
+  #sponsor_2500_header
+    a, a:visited, a:active, a:hover
+      color: $yellow
+
+  #sponsor_2500
+    em
+      color: $yellow
+      font-weight: bold
+
+  #sponsor_5000_header
+    a, a:visited, a:active, a:hover
+      color: $red
+
+  #sponsor_5000
+    em
+      color: $red
+      font-weight: bold
