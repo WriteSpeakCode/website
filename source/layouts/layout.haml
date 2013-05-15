@@ -33,12 +33,15 @@
       .row-fluid
         .span12
           %nav.navbar
-            %a.btn.btn-navbar{ :"data-toggle" => "collapse", :"data-target" => ".nav-collapse" }
+            %a.btn.btn-navbar{ :"data-toggle" => "collapse", :"data-target" => "#main-nav" }
               %span.icon-bar
               %span.icon-bar
               %span.icon-bar
 
-            .nav-collapse.collapse
+            %a#subscribe-info.btn-navbar{ :"data-toggle" => "collapse", :"data-target" => "#subscribe-nav" }
+              %span.icon-info-sign
+
+            #main-nav.nav-collapse.collapse
               %ul.nav
                 %li#nav-about
                   %a{ href: '/about.html' } About
@@ -52,16 +55,18 @@
                 %li#nav-sponsor
                   %a{ href: '/sponsor.html' } Sponsor
 
+            #subscribe-nav.nav-collapse.collapse
+              = partial 'mailchimp'
+
     .container-fluid
       .row-fluid
         #main.span10
           = yield
 
         .span2.sidebar
-          .label.label-important
-            Registration begins 
-            %br/
-            5/15 12pm EST!
+          %a.btn.btn-warning{ href: 'http://writespeakcode.ticketleap.com/writespeakcode/', target: '_blank' } 
+            Register now!
+
           .details.what
             %strong what
             .detail
@@ -88,23 +93,18 @@
                 Empowering ourselves and each other to become thought leaders, 
                 conference speakers, and open source contributors.
 
-          %ul.credits
-            %li 
-              Logo design by McKenna Lowry &amp; Maryanne Ko
-            %li
-              &copy; Rebecca Miller-Webster
+    .row-fluid
+      %footer.span12
+        %ul.nav.inline
+          %li
+            &copy; Rebecca Miller-Webster
+          %li
+            %i.icon-heart
+            Logo design by 
+            McKenna Lowry
+            and
+            Maryanne Ko
 
-
-    -#%nav.bottom_nav
-      -#%ul.nav.inline
-        -#%li
-          -#&copy; Rebecca Miller-Webster
-        -#%li.divider-vertical
-        -#%li
-          -#Logo design by 
-          -#McKenna Lowry
-          -#and
-          -#Maryanne Ko
 
   %script{ src: "http://code.jquery.com/jquery.js" }
   = javascript_include_tag  "application"
