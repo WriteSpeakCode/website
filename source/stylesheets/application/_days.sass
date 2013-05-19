@@ -1,0 +1,78 @@
+// Day Summaries
+$day_icon_unit: 100px
+
+.day_summaries
+  text-align: left
+
+.days
+  list-style-type: none
+
+  li
+    margin-bottom: $day_icon_unit/2
+
+.day_icon
+  @include round-icon($day_icon_unit, $day_icon_color, $day_icon_bg)
+
+.day_summary
+  .area
+    text-transform: uppercase
+    font-weight: bold
+    color: $day_area_header
+    font-size: $fontSizeHuge
+
+// About
+
+.milestones
+  font-size: $fontSizeLarge
+  text-align: center
+  strong
+    color: $red
+
+.muted
+  color: $grayLighter
+
+.learn_do
+  @include border-radius(6px)
+
+  border: 1px solid $sidebar_border
+  padding: $paddingLarge
+  margin: 20px
+
+  .icon-4x
+    display: inline-block
+    margin-top: 60px
+
+  .day_summary
+    width: 35%
+    margin: $paddingLarge
+    padding: $paddingLarge
+    display: inline-block
+    vertical-align: top
+
+    .area
+      color: $green
+
+    ul
+      margin-top: 20px
+
+  .icons-li
+    color: $green
+
+  h4
+    .icon-star
+      padding: 0 15px
+    margin-bottom: 50px
+
+.about_write, .about_speak, .about_code
+  .lead
+    margin: 50px inherit
+
+  .day_icon
+    background-color: $green
+
+  h4
+    text-align: center
+    color: $red
+
+  .credits
+    clear: both

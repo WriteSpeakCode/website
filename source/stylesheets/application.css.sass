@@ -1,10 +1,16 @@
 @import "colors"
 @import "sizes"
+@import "mixins"
 
 @import "compass"
 @import "bootstrap"
 @import "bootstrap-responsive"
 @import "bourbon"
+
+
+h1, h2, h3, h4
+  color: $red
+  text-align: center
 
 .btn-primary
   @include linear-gradient(top, lighten($button_primary_bg, 5%), $button_primary_bg)
@@ -57,13 +63,8 @@
       padding: 5px 5px 0
       margin:  0 10px
 
-.credits
-  list-style-type: none
-  color: $grayLighter
-  padding: 10px 0
-
-  li
-    margin-bottom: 10px
+.breadcrumb
+  background-color: $offWhite
 
 .navbar
   background-color: $navbarBackground
@@ -137,39 +138,9 @@
   p
     margin: -44px 0 0 24px
   &:before
-    content: "}"
+    content: ""
     font-size: $baseFontSize * 4
 
-// Day Summaries
-$day_icon_unit: 100px
-
-.day_summaries
-  text-align: left
-
-.days
-  list-style-type: none
-
-  li
-    margin-bottom: $day_icon_unit/2
-
-.day_icon
-  @include border-radius(50%)
-  background-color: $day_icon_bg
-  width: $day_icon_unit
-  height: $day_icon_unit
-  text-align: center
-  color: $day_icon_color
-  padding: 10px
-  position: absolute
-  font-size: $day_icon_unit - 10
-
-.day_summary
-  margin-left: $day_icon_unit + 50px
-  .area
-    text-transform: uppercase
-    font-weight: bold
-    color: $day_area_header
-    font-size: $fontSizeHuge
 
 // Nav active states
 
@@ -179,6 +150,7 @@ $day_icon_unit: 100px
       @extend .active
 
 footer
+  margin-top: 50px
   padding: $paddingSmall
   color: $grayLight
   ul.nav, li
@@ -189,45 +161,4 @@ footer
     padding-left: 5px
     text-transform: uppercase
 
-//## Page Specific
-
-.index
-  //.details.what, 
-  .details.why
-    display: none
-
-.sponsor
-  .accordion-heading
-    font-size: $fontSizeLarge
-
-  #sponsor_1000_header
-    a, a:visited, a:active, a:hover
-      color: $green
-
-  #sponsor_1000
-    em
-      color: $green
-      font-weight: bold
-
-  #sponsor_2500_header
-    a, a:visited, a:active, a:hover
-      color: $yellow
-
-  #sponsor_2500
-    em
-      color: $yellow
-      font-weight: bold
-
-  #sponsor_5000_header
-    a, a:visited, a:active, a:hover
-      color: $red
-
-  #sponsor_5000
-    em
-      color: $red
-      font-weight: bold
-
-.register
-  .sidebar
-    > .btn
-      display: none
+@import "application/*"

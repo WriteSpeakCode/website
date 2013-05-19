@@ -1,0 +1,36 @@
+$arrow_width: 15px
+$arrow_border: 2px
+$arrow_border_color: $darkGray
+
+.arrow_box 
+  @include border-radius($arrow_width/3)
+  position: relative
+  background: $white
+  border: $arrow_border solid $arrow_border_color
+  min-height: $arrow_width*3
+  height: auto
+
+.arrow_box:after, .arrow_box:before 
+  right: 100%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  pointer-events: none
+
+
+.arrow_box:after 
+  border-color: transparent
+  border-right-color: $white
+  border-width: $arrow_width
+  top: 50%
+  margin-top: -$arrow_width
+
+.arrow_box:before 
+  border-color: transparent
+  border-right-color: $arrow_border_color
+  border-width: $arrow_width + $arrow_border + 1
+  top: 50%
+  margin-top: -($arrow_width + $arrow_border + 1)
+

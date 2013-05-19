@@ -14,7 +14,7 @@
       .header.row-fluid
         .span10
           %a{ href: '/' }
-            %img.logo{ src: '/images/writespeakcode_logo.png' }
+            = image_tag 'writespeakcode_logo.png', class: 'logo'
           %h1.pull-left
             Write/Speak/Code
         .span2
@@ -29,7 +29,7 @@
               %li
                 %a{ href: 'mailto:info@writespeakcode.com' }
                   %span.icon-envelope
-            %img{ src: '/images/writespeakcode_details.png', width: '178', height: '21' }
+            = image_tag 'writespeakcode_details.png', width: '178', height: '21'
       .row-fluid
         .span12
           %nav.navbar
@@ -43,8 +43,19 @@
 
             #main-nav.nav-collapse.collapse
               %ul.nav
-                %li#nav-about
-                  %a{ href: '/about.html' } About
+                %li#nav-about.dropdown
+                  %a.dropdown-toggle{ href: '#', 'data-toggle' => 'dropdown' } 
+                    About
+                    %b.caret
+                  %ul.dropdown-menu
+                    %li= link_to 'Summary', '/about.html'
+                    %li.divider
+                    %li= link_to 'Write', '/about/write.html'
+                    %li= link_to 'Speak', '/about/speak.html'
+                    %li= link_to 'Code', '/about/code.html'
+                    %li.divider
+                    %li= link_to 'Organizers', '/about/organizers.html'
+
                 %li.divider-vertical
                 %li#nav-register
                   %a{ href: '/register.html' } Register
@@ -77,6 +88,8 @@
             %strong when
             .detail
               %p
+                10am-6pm
+                %br
                 June 20-22, 2013
           .details.where
             %strong where
@@ -97,6 +110,13 @@
       %footer.span12
         %ul.nav.inline
           %li
+            %a{ href: '/code-of-conduct.html' }
+              Code of Conduct
+          %li.divider /
+          %li
+            = link_to "Who we are", '/about/organizers.html'
+          %li.divider /
+          %li
             &copy; Rebecca Miller-Webster
           %li
             %i.icon-heart
@@ -104,10 +124,6 @@
             McKenna Lowry
             and
             Maryanne Ko
-        %p
-          %a{ href: '/code-of-conduct.html' }
-            Conference Code of Conduct
-
 
   %script{ src: "http://code.jquery.com/jquery.js" }
   = javascript_include_tag  "application"

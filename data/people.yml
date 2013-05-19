@@ -1,0 +1,137 @@
+vanessa:
+  name: Vanessa Hurst
+  image: vhurst.jpeg
+  url: http://vanessahurst.com
+  bio: is a data-focused technologist and advocate of coding for humanity, 
+       currently building <a href="http://codemontage.com" target="_blank">CodeMontage</a>. 
+       She founded <a href="http://developersforgood.org" target="_blank">Developers for Good</a> 
+       and co-founded <a href="http://girldevelopit.com" target="_blank">Girl Develop It</a>. 
+       Vanessa advises <a href="http://ohours.org" target="_blank">Ohours</a> and scouts
+       for awesome open source projects for 
+       <a href="http://webfwd.org" target="_blank">Mozilla WebFWD</a>. 
+       She love tigers, marshmallows, chai lattes, and really big ideas.
+  pages: 
+    - code 
+    - organizers
+  type: person
+  social:
+    twitter: http://www.twitter.com/dbness
+    github: http://www.github.com/dbness
+
+code_montage:
+  name: Code Montage
+  url: http://codemontage.com
+  image: code_montage.png
+  bio: promotes social innovation while helping coders improve their skills.
+    CodeMontage was born out of the belief that computing is the most efficient 
+    way to improve the human experience, and that software developers become the 
+    best through lots of practice building real applications. We know from teaching 
+    beginners that there’s a frustrating gap between learning to code and being 
+    able to build robust applications, and we know from hiring and mentoring 
+    developers that experience can’t be replaced with canned tutorials.
+  pages: 
+    - code
+  type: company
+  social:
+    twitter: https://twitter.com/CodeMontage
+    facebook: https://www.facebook.com/CodeMontage
+
+rebecca:
+  name: Rebecca Miller-Webster
+  url: http://www.rebeccamiller-webster.com
+  image: rebecca-web1-sq.jpg
+  bio: is currently a Ruby and Javascript developer at <a href="http://couples.howaboutwe.com" target=_blank>How About We</a>. 
+    She spent the last 10 years building software in a variety of languages for 
+    large corporations, non-profits, and start-ups, including as VP of Engineering for an early-stage start up in NYC. 
+    Rebecca founded <a href="http://www.writespeakcode.com">Write/Speak/Code</a>, 
+    co-organizes <a href="http://goruco.com" target=_blank>GORUCO</a> and makes 
+    <a href="http://www.patternedapp.com" target=_blank>Patterned</a>. She also makes
+    <a href="http://www.thebeccacomplex.com">music</a> and jewelry and loves cupcakes,
+    pizza, and crab rangoon. Rebecca lives in Sunnyside, Queens with her husband 
+    and black pug. And she changes her hair. A lot.
+  pages:
+    - speak
+    - write
+    - organizers
+  type: person
+  social:
+    twitter: http://www.twitter.com/rmillerwebster
+    github: http://www.github.com/rmw
+
+rachel:
+  name: Rachel Ober
+  url: http://rachelober.com
+  image: rachel.jpg
+  bio: is a Ruby on Rails and Front-end developer who focuses on Usability, 
+    User Experience and User Testing. She completed five-year program at 
+    Northeastern University’s College of Computer and Information Science, where 
+    she graduated in 2008 with a dual degree in Computer Science & Cognitive Psychology.
+    Rachel likes a lot of different music, posting photos of her 
+    <a title="Wikipedia article on Pembroke Welsh Corgis" href="http://en.wikipedia.org/wiki/Pembroke_Welsh_Corgi" target="_blank">Pembroke Welsh Corgi</a>, 
+    <a href="http://rachelober.com/tags/isabella/">Isabella</a>, and driving around 
+    with her husband and Isabella in her 2007 Honda Fit.
+  social:
+    twitter: http://www.twitter.com/rachelober
+    github: https://github.com/rachelober
+  pages:
+    - speak
+    - organizers
+  type: person
+
+celia:
+  name: Celia La
+  url: http://www.linkedin.com/in/celiala
+  image: celia.jpg
+  bio: is currently a .Net/SQL Server software developer. She is also a volunteer 
+    at <a href='http://coderdojo.net' target=_blank>CodeDojo NYC</a>, co-organizes 
+    the Tongue-Tied Techs meetup, and is the Technical Co-Chair of the US National 
+    Committee for UN Women. Celia also is an accomplished jazz vocalist, loves to dance 
+    bhangra and volunteer for RightRides.org.
+  pages:
+    - speak
+    - organizers
+  social:
+    twitter: https://twitter.com/celiala
+    github: https://github.com/celiala
+  type: person
+
+op_ed:
+  name: The Op-Ed Project
+  url: http://www.theopedproject.org/
+  image: oep-logo-website1.gif
+  bio: is social venture founded to increase the range of voices and quality of ideas we hear in the world.  
+       A starting goal is to increase the number of women thought leaders in key 
+       commentary forums to a tipping point.  We envision a world where the best 
+       ideas &mdash; regardless of where they come from &mdash; will have a 
+       chance to be heard, and to shape society and the world. Working with top 
+       universities, foundations, think tanks, nonprofits, corporations and 
+       community organizations, we scout and train under-represented experts to 
+       take thought leadership positions in their fields; we connect them with 
+       our national network of high-level media mentors; and we vet and channel 
+       the best new experts and ideas directly to media gatekeepers who need them, 
+       across all platforms.  The OpEd Project is an 
+       <a href="http://www.echoinggreen.org/" target=_blank>Echoing Green Project</a>.
+  pages:
+    - write
+  type: company
+  social:
+    twitter: https://twitter.com/TheOpEdProject
+    facebook: https://www.facebook.com/theopedproject
+
+chrys:
+  name: Chrys Wu
+  url: http://www.chryswu.com/
+  image: chrys.jpg
+  bio: is a journalist and user engagement strategist, who works with businesses 
+    interested in deepening connection to their audiences through research, 
+    community-building strategy and user-centric design. She also speaks on 
+    <a href="http://find.chryswu.com">data journalism, online engagement and 
+    coding</a>.
+  pages:
+    - sponsor
+    - organizers
+  social:
+    twitter: https://twitter.com/celiala
+    github: https://github.com/celiala
+  type: person
+

@@ -1,0 +1,16 @@
+@mixin round-icon($icon_unit, $icon_color, $icon_bg)
+  @include border-radius(50%)
+
+  background-color: $icon_bg
+  width: $icon_unit
+  height: $icon_unit
+
+  text-align: center
+  color: $icon_color
+  font-size: $icon_unit - 10
+
+  padding: 10px
+  position: absolute
+
+  & + div, & + p
+    margin-left: $icon_unit + 50px

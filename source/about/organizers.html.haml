@@ -1,0 +1,43 @@
+.lead
+  The organizers of Write/Speak/Code are experts in their technology as well as 
+  speaking, open source, and thought leadership. We are entrepreneurs, start-up 
+  mavens, corporate leaders, and teachers. We represent a variety of languages 
+  and are active both in our respective communities and the broader women in 
+  tech community.
+
+%p
+  %strong Write/Speak/Code
+  came about after a late night email 
+  = link_to 'Rebecca', '#rebecca'
+  sent to
+  = succeed ',' do
+    = link_to 'Chrys', '#chrys'
+  = succeed ',' do
+    = link_to 'Rachel', '#rachel'
+  and
+  = link_to 'Vanessa', '#vanessa'
+  among others.
+
+  Rebecca was inspired by taking the core seminar from
+  = link_to 'The Op-Ed Project', 'http://www.theopedproject.org'
+  and seeing 
+  = link_to 'Zach Holman', 'http://zachholman.com/'
+  give his talk
+  = succeed '.' do
+    = link_to 'Open Source Misfeasance', 'http://zachholman.com/talk/open-source-misfeasance/'
+%p
+  While there are many systemic reasons for women's lack of participation in 
+  writing and speaking about code and contributing to open source, we felt we could attack
+  the personal reasons women had for not writing, speaking, and coding &mdash;
+  %i 
+    I'm not an expert, What would I talk about?, Everyone already knows about that
+  &mdash;
+  and change the world!
+
+%p.organizers
+  - people = data.people.select { |k, v| v.pages.include?('organizers') }.sort_by { |k, v| v.type + v.name }
+  = people.map { |k, v| "<a href='##{k}'>#{v.name}</a>" }.join("<span class='icon-star'></span>")
+
+%hr
+
+= partial 'people_list', locals: { filter: 'organizers' }
