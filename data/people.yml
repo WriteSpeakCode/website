@@ -120,18 +120,20 @@ op_ed:
 
 chrys:
   name: Chrys Wu
-  url: http://www.chryswu.com/
+  url: http://about.chryswu.com/
   image: chrys.jpg
-  bio: is a journalist and user engagement strategist, who works with businesses 
+  bio: is a journalist and user engagement strategist who works with businesses 
     interested in deepening connection to their audiences through research, 
-    community-building strategy and user-centric design. She also speaks on 
-    <a href="http://find.chryswu.com">data journalism, online engagement and 
+    community-building strategy and user-centric design. She founded the coding 
+    and social group <a href="http://meetup.com/NYC-Ruby-Women">NYC Ruby Women</a> 
+    and organizes <a href="http://meetupnyc.hackshackers.com">Hacks/Hackers NYC</a>.
+    She also speaks on <a href="http://find.chryswu.com">data journalism, online engagement and 
     coding</a>.
   pages:
     - sponsor
     - organizers
   social:
-    twitter: https://twitter.com/celiala
-    github: https://github.com/celiala
+    twitter: https://twitter.com/MacDiva
+    github: https://github.com/MacDiva
   type: person
 
