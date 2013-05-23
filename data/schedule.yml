@@ -1,0 +1,318 @@
+days:
+  write: thursday
+  speak: friday
+  code: saturday
+
+actions:
+  learn:
+    icon: book
+    tooltip: Learn
+  write:
+    icon: pencil
+    tooltip: Write
+  speak:
+    icon: microphone
+    tooltip: Speak
+  code:
+    icon: code
+    tooltip: Code
+  talk:
+    icon: bullhorn
+    tooltip: Talk
+  panel:
+    icon: group
+    tooltip: Panel
+  action:
+    icon: bolt
+    tooltip: Do!
+  food:
+    icon: food
+    tooltip: Food
+  network:
+    icon: exchange
+    tooltip: Network
+  group:
+    icon: comments
+    tooltip: Group Workshop
+  inspire:
+    icon: rocket
+    tooltip: Inspiration!
+
+
+thursday:
+  -
+    actions: 
+      - talk
+      - inspire
+    talk_id: thursday_welcome
+    talk_name: Welcome
+  - 
+    actions:
+      - write
+      - speak
+      - learn
+      - action
+    talk_id: op_ed_morning
+    talk_name: Foundations of Thought Leadership
+    speakers:
+      - op_ed
+    more: true
+    talk_description: In our highly-interactive, energetic full-day seminar we explore the 
+        source of credibility and how to establish it; how to present ideas 
+        quickly and powerfully under pressure; the components of powerful, 
+        evidence-based argument; the difference between being “right” and being 
+        effective; and strategies for making a greater impact, including how to 
+        escape a pigeonhole, how to preach beyond the choir, and the value of 
+        seeing your argument as part of a bigger picture—and yourself as part of 
+        a larger public conversation.  Participants leave with a draft op-ed in 
+        hand.
+  -
+    actions: 
+      - food
+      - network
+    talk_id: thursday_lunch
+    talk_description: Lunch &amp; Networking
+  - 
+    actions:
+      - write
+      - learn
+      - action
+    talk_id: op_ed_afternoon
+    talk_name: Foundations of Thought Leadership Cont.
+    speakers:
+      - op_ed
+    more: true
+    talk_description: In our highly-interactive, energetic full-day seminar we explore the 
+        source of credibility and how to establish it; how to present ideas 
+        quickly and powerfully under pressure; the components of powerful, 
+        evidence-based argument; the difference between being “right” and being 
+        effective; and strategies for making a greater impact, including how to 
+        escape a pigeonhole, how to preach beyond the choir, and the value of 
+        seeing your argument as part of a bigger picture—and yourself as part of 
+        a larger public conversation.  Participants leave with a draft op-ed in 
+        hand.
+  - 
+    actions:
+      - write
+      - group
+      - learn
+    talk_id: writing_opportunity
+    talk_name: Writing Opportunities for Developers
+    talk_description: In this group workshop, we will explore the writing oppurtunities for
+        developers &mdash; so much more than blogging! &mdash; and how these 
+        oppurtunities can further your career and your goals.
+
+friday:
+  -
+    actions: 
+      - group
+      - learn
+    talk_id: why_here
+    talk_name: Why are you here?
+    talk_description: This group workshop will begin Speak day by grounding it
+      in each attendees current goals and experiences.  We will also address the 
+      fears that prevent each of us from speaking and how to combat those fears.
+  -
+    actions: 
+      - panel
+      - inspire
+      - learn
+    talk_id: speakers_panel
+    talk_name: Women developers speaking about speaking
+    talk_description: A panel of experienced and novice women developers will address your
+      fears while discussing how they got started speaking, their experience 
+      giving talks, and strategies for becoming a fantastic speaker.
+    speakers:
+      - liz_crawford
+    more: true
+  -
+    actions: 
+      - speak
+      - write
+      - group
+      - learn
+      - action
+    talk_id: topic_generation
+    talk_name: Topic Generation + Speak Date
+    talk_description: Start with fast-paced topic generation exercises you can
+      continue to use after this conference.  Then, you'll "Speak Date" your fellow attendees and give a brief talk
+      about them. Review yourself speaking on video.
+  -
+    actions: 
+      - group
+    talk_id: meet_group
+    talk_name: Meet your presentation group
+    talk_description: You'll be divided into groups based on similar experience 
+      and expertise. The groups will end the day by choosing a topic and each 
+      member of the group presenting.
+  -
+    actions: 
+      - food
+      - network
+    talk_id: friday_lunch
+    talk_description: Lunch &amp; Networking
+  -
+    actions: 
+      - write
+      - learn
+    talk_id: proposal_exercise
+    talk_name: How to write a talk proposal
+    talk_description: Learn the ins and outs of talk proposals &mdash; what they
+      are, the sections that matter, and how to write one.
+  -
+    actions: 
+      - speak
+      - write
+      - group
+      - action
+    talk_id: group_proposal
+    talk_name: Write a talk proposal
+    talk_description: Each presentation group with pick a topic and write their
+      talk proposal. A member of the group will present the proposal to the group 
+      and a panel of conference organizers.
+  -
+    actions: 
+      - panel
+      - learn
+    talk_id: conf_organizers_panel
+    talk_name: Conference Organizer's Panel
+    talk_description: Conference organizers will begin by giving feedback on 
+      each group's talk proposal.  Then we will discuss what they look for when 
+      reviewing talk proposals and speakers and how the process of putting together 
+      a conference program works and how you can work it!
+    speakers:
+      - gloria_w
+      - maria_sciarrino
+    more: true
+  -
+    actions: 
+      - learn
+    talk_id: slides
+    talk_name: Make it pretty and effective
+    talk_description: Let's talk about slides &mdash; making effective slides can 
+      be harder than it looks.  Learn the top tips and tricks for creating a 
+      powerful presentation.  What's the best way to show code? What should you 
+      think about when choosing colors and fonts? 
+  -
+    actions: 
+      - speak
+      - write
+      - group
+      - action
+    talk_id: create_slides
+    talk_name: Create slides and present!
+    talk_description: Each group creates a presentation and each individual 
+      presents a part of the presentation.
+  -
+    actions: 
+      - panel
+      - learn
+    talk_id: speaker_feedback
+    talk_name: Presentation feedback from expert women
+    talk_description: Experienced women speakers will give each attendee concrete and actionable
+      feedback on their presentation. 
+    speakers:
+      - rebecca_garcia
+    more: true
+  -
+    actions: 
+      - write
+      - group
+      - learn
+    talk_id: speaking_opportunities
+    talk_name: Speak opportunities
+    talk_description: What speaking opportunities are available to you? How do 
+      you evaluate your options? When is the right time in your career to speak? 
+
+saturday:
+  -
+    actions: 
+      - talk
+      - inspire
+    talk_id: saturday_welcome
+    talk_name: We can Code to Change the World.
+  -
+    actions:
+      - talk
+      - learn
+      - inspire
+    talk_id: why_open_source
+    talk_name: Why Open Source?
+    speakers:
+      - camille_acey
+  -
+    actions:
+      - speak
+      - code
+      - action
+    talk_id: present_project
+    talk_name: Publish, present &amp; submit!
+    talk_description: Publish a code project or a basic markdown page. Then 
+      present your new project <i>(optional)</i> and submit 
+      your new <a href='http://www.github.com' target=_blank>Github</a> repository.
+  -
+    actions:
+      - talk
+      - learn
+    talk_id: os_licenses
+    talk_name: Open Source Licenses
+    description: Learn about all the intricies of open source licensing.
+  -
+    actions:
+      - code
+      - learn
+      - action
+    talk_id: choose_project
+    talk_name: Get started!
+    talk_description: Learn how to choose a project, find projects, and setup locally.
+  -
+    actions: 
+      - food
+      - network
+    talk_id: saturday_lunch
+    talk_description: Lunch &amp; Networking
+  -
+    actions:
+      - talk
+      - learn
+    talk_id: os2
+    talk_description: Open Source Talk <em>Waiting for confirmation</em>
+  -
+    actions:
+      - learn
+    talk_id: documentation
+    talk_name: Join the community
+    talk_description: Helpful bug reports, documentation, and getting help.
+  -
+    actions:
+      - code
+      - action
+    talk_id: contribute_code
+    talk_name: Contribute!
+    talk_description: Contribute code, tests, documentation, or something trackable.
+      Digitally share your project, one you like, or one you will 
+      contribute to.
+  -
+    actions:
+      - talk
+      - learn
+    talk_id: feminist_models
+    talk_name: Feminist Model for Open Source
+    speakers:
+      - corey_latislaw
+      - pam_selle
+  -
+    actions:
+      - code
+      - action
+    talk_id: play_project
+    talk_name: Play and present
+    talk_description: Play around in your project and present your changes, 
+      contributions, and open source misfeasance to the group.
+  -
+    actions:
+      - talk
+      - learn
+      - inspire
+    talk_id: why_code
+    talk_name: Why we must Code to Change the World <br /> <br />Why we must Write/Speak/Code

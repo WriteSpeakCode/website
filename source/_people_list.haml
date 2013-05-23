@@ -1,16 +1,33 @@
+- sort_include_type ||= false
 %ul.people_list
-  - data.people.select { |k, v| v.pages.include?(filter) }.sort_by { |k, v| v.type + v.name }.each do |k, v|
+  - data.people.select { |k, v| v.pages.include?(filter) }.sort_by { |k, v| (sort_include_type ? v.type : '') + v.name }.each do |k, v|
     %li{ class: v.type }
       %a{ id: k }
       .info.pull-left
-        %a{ href: v.url, target: '_blank' }
-          = image_tag v.image, alt: v.name
+        - if v.image
+          %a{ href: v.url, target: '_blank' }
+            = image_tag v.image, alt: v.name
         %ul.inline.social
-          - v[:social].each do |type, url|
+          - (v[:social] || []).each do |type, url|
             %li
               %a{ href: url, target: '_blank' }
                 %span{ class: "icon-#{type}" }
-      %p
-        = link_to v.name, v.url, target: '_blank', class: 'name'
+          - if v.url
+            %li
+              %a{ href: v.url, target: '_blank' }
+                %span.icon-link
+
+      - show_talk = !!show_talk && v.talk
+      - bio_name_class = show_talk ? '' : 'name'
+      - if show_talk
+        %p.talk
+          %span.name= v.name
+          %br/
+          = v.talk
+      %p.bio
+        - if v.url
+          = link_to v.name, v.url, target: '_blank', class: bio_name_class
+        - else
+          =v.name
         = v.bio
 

@@ -13,6 +13,9 @@ $day_icon_unit: 100px
 .day_icon
   @include round-icon($day_icon_unit, $day_icon_color, $day_icon_bg)
 
+.day_icon.small
+  @include round-icon($day_icon_unit/2, $day_icon_color, $day_icon_bg)
+
 .day_summary
   .area
     text-transform: uppercase
@@ -58,10 +61,12 @@ $day_icon_unit: 100px
   .icons-li
     color: $green
 
-  h4
-    .icon-star
-      padding: 0 15px
+  .themes
     margin-bottom: 50px
+
+.themes
+  .icon-star
+    padding: 0 15px
 
 .about_write, .about_speak, .about_code
   .lead

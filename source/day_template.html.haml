@@ -39,8 +39,15 @@
           = item
 
 
-  %h4
+  %h4.themes
     = day_info.themes.join("<span class='icon-star'></span>")
+
+%p
+  %strong= data.days[:each_day][:headline]
+  and will include:
+  %ul
+    - data.days[:each_day][:includes].each do |item|
+      %li= item
 
 .lead
   .day_icon
@@ -51,13 +58,6 @@
     to change the world day
     = day_info.summary
 
-%p
-  %strong= data.days[:each_day][:headline]
-  and will include:
-  %ul
-    - data.days[:each_day][:includes].each do |item|
-      %li= item
-
 %hr
 
 .credits
@@ -65,4 +65,4 @@
     = day_title 
     to Change the World Day is being crafted by:
 
-  = partial 'people_list', locals: { filter: day_name }
+  = partial 'people_list', locals: { filter: day_name, sort_include_type: true }

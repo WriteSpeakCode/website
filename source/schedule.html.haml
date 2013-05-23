@@ -2,11 +2,60 @@
 title: Schedule for Write/Speak/Code
 ---
 
-.lead
-  .alert.alert-info
-    We are finalizing the schedule now. Stay tuned!
+%ul#day_nav.nav.nav-pills
+  %li
+    = link_to 'Thursday <br><small>June 20 10am-6pm</small>', "#write"
+  %li= link_to 'Friday <br><small><em>June 21 10am-6pm</em></small>', '#speak'
+  %li= link_to 'Saturday <br><small><em>June 22 10am-6pm</em></small>', '#code'
 
-  %a.btn.btn-large.btn-primary{ href: 'http://writespeakcode.ticketleap.com/writespeakcode/', target: '_blank' }
-    %i.icon-ticket
-    Register now!
-    %i.icon-arrow-right
+.schedules
+  -#{ "data-spy" => "scroll", "data-target" => "#day_nav", "data-offset" => 0 }
+  - [:write, :speak, :code].each do |day|
+    %a{ id: day }
+
+    - weekday = data.schedule.days[day]
+    %h2= weekday.titleize
+
+    %h3
+      = day.to_s.titleize
+      to Change the World!
+
+    .day_icon.small
+      %i{ class: "icon-#{data.schedule.actions[day].icon}" }
+
+    - day_info = data.days.days[day]
+    .day_header
+      %p.milestones
+        - day_info.milestones.each_with_index do |m, i|
+          %strong= m[:header]
+          = succeed '.' do
+            = m[:description]
+          %br
+
+      %p.themes= day_info.themes.join("<span class='icon-star'></span>")
+
+    %a.more_info{ href: "/about/#{day}.html" }
+      More
+      %i.icon-arrow-right
+
+    %table.table.table-bordered
+      - data.schedule[weekday].map { |item| OpenStruct.new(item) }.each do |item|
+        %tr
+          -#%td.time
+          %td.actions
+            %ul.inline
+              - item.actions.each do |action_code|
+                - action = data.schedule.actions[action_code]
+                %i{ class: "icon-#{action.icon}", alt: action.tooltip }
+          %td.event
+            %a{ id: item.talk_id }
+            %p.talk_name
+              = item.talk_name
+              - unless item.speakers.nil?
+                %br
+                %span.speakers
+                  - speakers = item.speakers.map { |s| link_to(data.people[s].name, "/speakers.html##{s}") }
+                  - speakers.push('<em>more!</em>') if item.more
+                  = speakers.to_sentence
+            - if item.talk_description
+              %p.talk_description= item.talk_description
