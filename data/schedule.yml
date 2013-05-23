@@ -1,0 +1,111 @@
+days:
+  write: thursday
+  speak: friday
+  code: saturday
+
+actions:
+  learn:
+    icon: book
+    tooltip: Learn
+  write:
+    icon: pencil
+    tooltip: Write
+  speak:
+    icon: microphone
+    tooltip: Speak
+  code:
+    icon: code
+    tooltip: Code
+  talk:
+    icon: bullhorn
+    tooltip: Talk
+  panel:
+    icon: panel
+    tooltip: Panel
+  action:
+    icon: bolt
+    tooltip: Do!
+  food:
+    icon: food
+    tooltip: Food
+  network:
+    icon: exchange
+    tooltip: Network
+  group:
+    icon: comments
+    tooltip: Group Workshop
+
+
+thursday:
+  -
+    actions: 
+      - talk
+    talk_id: thursday_welcome
+    talk_name: Welcome
+  - 
+    actions:
+      - write
+      - speak
+      - learn
+      - action
+    talk_id: op_ed_morning
+    talk_name: Foundations of Thought Leadership Morning Seminar
+    speakers:
+      - op_ed
+    talk_description: In our highly-interactive, energetic full-day seminar we explore the 
+        source of credibility and how to establish it; how to present ideas 
+        quickly and powerfully under pressure; the components of powerful, 
+        evidence-based argument; the difference between being “right” and being 
+        effective; and strategies for making a greater impact, including how to 
+        escape a pigeonhole, how to preach beyond the choir, and the value of 
+        seeing your argument as part of a bigger picture—and yourself as part of 
+        a larger public conversation.  Participants leave with a draft op-ed in 
+        hand.
+  -
+    actions: 
+      - food
+      - network
+    talk_id: thursday_lunch
+    talk_name: Lunch &amp; Networking
+  - 
+    actions:
+      - write
+      - learn
+      - action
+    talk_id: op_ed_afternoon
+    talk_name: Foundations of Thought Leadership Afternoon Seminar
+    speakers:
+      - op_ed
+    talk_description: In our highly-interactive, energetic full-day seminar we explore the 
+        source of credibility and how to establish it; how to present ideas 
+        quickly and powerfully under pressure; the components of powerful, 
+        evidence-based argument; the difference between being “right” and being 
+        effective; and strategies for making a greater impact, including how to 
+        escape a pigeonhole, how to preach beyond the choir, and the value of 
+        seeing your argument as part of a bigger picture—and yourself as part of 
+        a larger public conversation.  Participants leave with a draft op-ed in 
+        hand.
+  - 
+    actions:
+      - write
+      - learn
+      - group
+    talk_id: writing_opportunity
+    talk_name: Writing Opportunities for Developers
+    talk_description: In this group workshop, we will explore the writing oppurtunities for
+        developers &mdash; so much more than blogging! &mdash; and how these 
+        oppurtunities can further your career and your goals.
+
+friday:
+  -
+    actions: 
+      - talk
+    talk_id: thursday_welcome
+    talk_name: Welcome
+
+saturday:
+  -
+    actions: 
+      - talk
+    talk_id: thursday_welcome
+    talk_name: Welcome

@@ -21,7 +21,7 @@ $img_left_offset: 30px
       padding-right: 20px
       margin-left: $company_img_width + $img_left_offset
 
-      a.name, a.name:hover, a.name:active, a.name:visited
+      .name, a.name, a.name:hover, a.name:active, a.name:visited
         color: $red
         font-weight: bold
 
@@ -31,11 +31,18 @@ $img_left_offset: 30px
       a
         font-size: $fontSizeHuge
 
+    .talk
+      font-style: italic
+      font-weight: bold
+      &, a, a:hover, a:visited, a:active
+        color: $yellow
+
+      .name
+        font-size: $fontSizeLarge
+
     &.company
       img
         width: $company_img_width
-      p
-        margin-left: $company_img_width + $img_left_offset
 
     &.person
       .info

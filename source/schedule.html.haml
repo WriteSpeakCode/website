@@ -10,3 +10,39 @@ title: Schedule for Write/Speak/Code
     %i.icon-ticket
     Register now!
     %i.icon-arrow-right
+
+%ul.nav.nav-pills
+  %li.active
+    = link_to 'Thursday', "#write"
+  %li= link_to 'Friday', '#speak'
+  %li= link_to 'Saturday', '#code'
+
+- [:write, :speak, :code].each do |day|
+  - weekday = data.schedule.days[day]
+  %a{ id: day }
+  .day_header
+    .day_icon
+      %i{ class: "icon-#{data.schedule.actions[day].icon}" }
+    %h2= weekday.titleize
+    %h3
+      = day.to_s.titleize
+      to Change the World!
+  %table.table.table-bordered
+    - data.schedule[weekday].map { |item| OpenStruct.new(item) }.each do |item|
+      %tr
+        -#%td.time
+        %td.actions
+          %ul.inline
+            - item.actions.each do |action_code|
+              - action = data.schedule.actions[action_code]
+              %i{ class: "icon-#{action.icon}", alt: action.tooltip }
+        %td.event
+          %a{ id: item.talk_id }
+          %p.talk_name
+            = item.talk_name
+            - unless item.speakers.nil?
+              %br
+              %span.speakers
+                = item.speakers.map { |s| link_to(data.people[s].name, "/speakers.html##{s}") }.join("<br />")
+          - if item.talk_description
+            %p= item.talk_description
