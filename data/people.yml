@@ -62,14 +62,15 @@ rachel:
   name: Rachel Ober
   url: http://rachelober.com
   image: rachel.jpg
-  bio: is a Ruby on Rails and Front-end developer who focuses on Usability, 
-    User Experience and User Testing. She completed five-year program at 
-    Northeastern University’s College of Computer and Information Science, where 
-    she graduated in 2008 with a dual degree in Computer Science & Cognitive Psychology.
-    Rachel likes a lot of different music, posting photos of her 
-    <a title="Wikipedia article on Pembroke Welsh Corgis" href="http://en.wikipedia.org/wiki/Pembroke_Welsh_Corgi" target="_blank">Pembroke Welsh Corgi</a>, 
-    <a href="http://rachelober.com/tags/isabella/">Isabella</a>, and driving around 
-    with her husband and Isabella in her 2007 Honda Fit.
+  bio: is a developer at <a href="http://paperlesspost.com" target=_blank>
+    Paperless Post</a> in New York City. She helps co-organize
+    <a href="http://meetup.com/NYC-Ruby-Women" target=_blank>NYC Ruby Women</a>,
+    teaches Ruby and Ruby on Rails at
+    <a href="http://generalassemb.ly" target=_blank>General Assembly</a> in
+    Manhattan and volunteers her time organizing workshops for
+    <a href="http://railsbridgenyc.org" target=_blank>RailsBridge NYC</a>.
+    Rachel is an avid scrapbooker and loves to talk about her Pembroke Welsh
+    Corgi, Isabella.
   social:
     twitter: http://www.twitter.com/rachelober
     github: https://github.com/rachelober
