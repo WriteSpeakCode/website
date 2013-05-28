@@ -15,9 +15,15 @@ title: About Write/Speak/Code
           %p
             %strong.weekday= info.weekday
             = info.summary
+
             %a{ href: "/about/#{name}.html" }
               Learn more
               %i.icon-arrow-right
+
+            %a{ href: "/schedule.html##{name}" }
+              Schedule
+              %i.icon-arrow-right
+
           %p
             = name.titleize
             to Change the World day is being crafted by

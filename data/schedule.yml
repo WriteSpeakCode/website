@@ -97,7 +97,10 @@ thursday:
       - group
       - learn
     talk_id: writing_opportunity
-    talk_name: Writing Opportunities for Developers
+    talk_name: Writing Opportunities + Devs Write Panel
+    speakers:
+      - chrys
+    more: true
     talk_description: In this group workshop, we will explore the writing oppurtunities for
         developers &mdash; so much more than blogging! &mdash; and how these 
         oppurtunities can further your career and your goals.

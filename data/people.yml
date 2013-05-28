@@ -135,10 +135,12 @@ chrys:
   pages:
     - sponsor
     - organizers
+    - speaker
   social:
     twitter: https://twitter.com/MacDiva
     github: https://github.com/MacDiva
   type: person
+  talk: Devs Write Panel
 
 corey_latislaw:
   name: Corey Latislaw
@@ -211,10 +213,13 @@ camille_acey:
 
 gloria_w:
   name: Gloria W
+  image: gloria.jpeg
   bio: is a Python developer and *NIX systems admin with 20+ years experience 
     in embedded systems and app design and development. Most recently, Gloria 
     is specializing in “from-scratch” software design and development for 
-    start-ups in the NYC area. Gloria is the organizer of <a href='http://www.pygotham.org'>PyGotham</a>.
+    start-ups in the NYC area. Gloria is the organizer of 
+    <a href='http://www.pygotham.org'>PyGotham</a> and the 
+    <a href='http://www.meetup.com/nycpython/'>NYC Python Meetup</a>.
   pages:
     - speaker
   type: person
@@ -244,12 +249,7 @@ maria_sciarrino:
   name: Maria T Sciarrino
   image: maria_sciarrino.jpg
   bio: is a feminist, guitar enthusiast, radio host, and
-    user experience strategist from Philadelphia, PA.  She is currently the head 
-    of the Programming Committee for the 
-    <a href="http://beacon.wharton.upenn.edu/webconf/" target=_blank>Wharton Web Conference</a> 
-    and in a previous life Maria was a DIY concert promoter, running
-    <a href="http://plainparade.org" target=_blank>Plain Parade</a> for 6 years 
-    with her best friend.
+    user experience strategist from Philadelphia, PA.
   pages:
     - speaker
   social:

@@ -46,11 +46,13 @@ $day_icon_unit: 100px
     margin-top: 60px
 
   .day_summary
-    width: 35%
     margin: $paddingLarge
     padding: $paddingLarge
-    display: inline-block
     vertical-align: top
+
+    @media only screen and (min-width: 768px)
+      width: 35%
+      display: inline-block
 
     .area
       color: $green

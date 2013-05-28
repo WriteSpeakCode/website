@@ -17,9 +17,19 @@ $img_left_offset: 30px
     height: auto
     border-bottom: 2px solid $grayLight
 
+    .info
+      @media only screen and (max-width: 767px)
+        text-align: center
+        margin: 0 auto 20px auto
+
+      @media only screen and (min-width: 768px)
+        float: left
+
     p
       padding-right: 20px
-      margin-left: $company_img_width + $img_left_offset
+
+      @media only screen and (min-width: 768px)
+        margin-left: $company_img_width + $img_left_offset
 
       .name, a.name, a.name:hover, a.name:active, a.name:visited
         color: $red

@@ -3,7 +3,7 @@
   - data.people.select { |k, v| v.pages.include?(filter) }.sort_by { |k, v| (sort_include_type ? v.type : '') + v.name }.each do |k, v|
     %li{ class: v.type }
       %a{ id: k }
-      .info.pull-left
+      .info
         - if v.image
           %a{ href: v.url, target: '_blank' }
             = image_tag v.image, alt: v.name
