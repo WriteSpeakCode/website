@@ -51,10 +51,11 @@ title: Schedule for Write/Speak/Code
             %a{ id: item.talk_id }
             %p.talk_name
               = item.talk_name
-              - unless item.speakers.nil?
+              - speakers = data.people.select { |k,v| v['pages'].try(:include?, 'speaker') && v['talk_id'] == item.talk_id }.values
+              - unless speakers.nil?
                 %br
                 %span.speakers
-                  - speakers = item.speakers.map { |s| link_to(data.people[s].name, "/speakers.html##{s}") }
+                  - speakers.map! { |s| link_to(data.people[s].name, "/speakers.html##{s}") }
                   - speakers.push('<em>more!</em>') if item.more
                   = speakers.to_sentence
             - if item.talk_description

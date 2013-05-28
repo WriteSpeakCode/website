@@ -115,7 +115,7 @@ op_ed:
   pages:
     - write
     - speaker
-  talk: Foundations of Thought Leadership
+  talk: op_ed_morning
   type: company
   social:
     twitter: https://twitter.com/TheOpEdProject
@@ -140,7 +140,7 @@ chrys:
     twitter: https://twitter.com/MacDiva
     github: https://github.com/MacDiva
   type: person
-  talk: Devs Write Panel
+  talk: writing_opportunity
 
 corey_latislaw:
   name: Corey Latislaw
@@ -165,7 +165,7 @@ corey_latislaw:
     twitter: https://twitter.com/corey_latislaw
     github: https://github.com/colabug
   type: person
-  talk: Feminist Models for Open Source Projects
+  talk: feminist_models
 
 pam_selle:
   name: Pam Selle
@@ -209,7 +209,7 @@ camille_acey:
     twitter: https://twitter.com/kavbojka
     github: https://github.com/camilleacey
   type: person
-  talk: Why Open Source?
+  talk: why_open_source
 
 gloria_w:
   name: Gloria W
@@ -222,8 +222,10 @@ gloria_w:
     <a href='http://www.meetup.com/nycpython/'>NYC Python Meetup</a>.
   pages:
     - speaker
+  social:
+    github: http://www.github.com/gloriajw
   type: person
-  talk: Conference Organizers Panel
+  talk: conf_organizers_panel
 
 rebecca_garcia:
   name: Rebecca Garcia
@@ -243,7 +245,7 @@ rebecca_garcia:
     twitter: https://twitter.com/geekgirlweb
     github: https://github.com/geekgirlweb
   type: person
-  talk: Speaker Feedback Panel Organizer
+  talk: speaker_feedback
 
 maria_sciarrino:
   name: Maria T Sciarrino
@@ -255,7 +257,7 @@ maria_sciarrino:
   social:
     twitter: https://twitter.com/mariatsciarrino
   type: person
-  talk: Conference Organizers Panel
+  talk: conf_organizers_panel
 
 liz_crawford:
   name: Liz Crawford
@@ -278,6 +280,62 @@ liz_crawford:
     twitter: https://twitter.com/liscrawford
     github: https://github.com/lizcrawford
   type: person
-  talk: Women developers speaking about speaking
+  talk: speakers_panel
 
+rushaine_m:
+  name: Rushaine McBean
+  image: rushaine.jpeg
+  bio: is a full stack developer at the Levo League. She primarily codes in 
+    JavaScript and turns to Ruby (Ruby on Rails or Sinatra) and Node.js frequently 
+    to power her web applications. Prior to Levo League, Rushaine earned her 
+    Computer Science degree at Hunter College and she spoke at her first 
+    conferences, BarCampNYC and LadiesWhoCode last year. She will be speaking at 
+    <a href="http://fluentconf.com/fluent2013/public/schedule/speaker/149766" target=_blank>FluentConf</a> 
+    on May 29th and jQuery Portland on June 14th.
+  pages:
+    - speaker
+  social:
+    twitter: https://twitter.com/copasetickid
+    github: https://github.com/RMTheCodeKid
+  type: person
+  talk: speakers_panel
+
+anna_s:
+  name: Anna Smith
+  image: Smith_Anna.png
+  url: http://annaksmith.org/
+  bio: is a data scientist at bitly in New York after being wooed away 
+    from a physics doctorate program at the University of Oregon.  Her work varies 
+    from writing for the bitly blog on data questions to longer term projects to 
+    surface information for bitly products using machine learning algorithms.  
+    Recently, she has published in both Forbes and Publications of the Astronomical 
+    Society of Australia.  In her spare time you can find her catching up on the 
+    latest celebrity gossip or creating her own GIFs.
+  pages:
+    - speaker
+  social:
+    twitter: https://twitter.com/omgannaks
+    github: https://github.com/annaks
+  type: person
+  talk: speakers_panel
+
+frederica_s:
+  name: Frederica Stahl
+  image: frederica.png
+  url: http://www.fredericastahl.com
+  bio: is a data-analyst and self-taught RoR developer currently working on a 
+    novel medical information platform, <a href="http://www.meddik.com" target=_blank">Meddick</a>. 
+    She is interested in flattening information hierarchies through technology, 
+    and has published papers on the the role of information and information sciences in medicine, 
+    which can be found at <a href="http://www.fredericastahl.com" target=_blank>www.fredericastahl.com</a>. 
+    Frederica has previously spoken at a variety of academic and policy conferences, 
+    and is very excited to be joining the conversation on women and technology as 
+    a panelist at <Write/Speak/Code>.
+  pages:
+    - speaker
+  social:
+    twitter: https://twitter.com/FredericaStahl
+    github: https://github.com/Frederica
+  type: person
+  talk: speakers_panel
 
