@@ -83,11 +83,9 @@ celia:
   name: Celia La
   url: http://www.linkedin.com/in/celiala
   image: celia.jpg
-  bio: is currently a .Net/SQL Server software developer. She is also a volunteer 
-    at <a href='http://coderdojo.net' target=_blank>CodeDojo NYC</a>, co-organizes 
-    the Tongue-Tied Techs meetup, and is the Technical Co-Chair of the US National 
-    Committee for UN Women. Celia also is an accomplished jazz vocalist, loves to dance 
-    bhangra and volunteer for RightRides.org.
+  bio: is a .Net/SQL Server developer at <a href='http://mediaradar.com/' target='_blank'>MediaRadar</a>. She co-organizes the <a href='http://meetup.com/tonguetiedtechs' target='_blank'>Tongue-Tied Techs</a> meetup, is the technical co-chair for the <a href='http://unwomen-metrony.org/' target='_blank'>NYC Chapter of UN Women, US National Committee</a> and 
+       volunteers for <a href='http://coderdojonyc.com/' target='_blank'>CoderDojo NYC</a>. Celia also is an accomplished jazz vocalist, loves to dance 
+       bhangra and volunteer for <a href='http://rightrides.org/'>RightRides.org</a>.
   pages:
     - speak
     - organizers
