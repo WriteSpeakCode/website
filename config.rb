@@ -1,3 +1,5 @@
+require 'pry'
+
 ###
 # Compass
 ###
@@ -33,6 +35,10 @@
 #   @which_fake_page = "Rendering a fake page with a variable"
 # end
 
+data.days.days.each do |name, info|
+  proxy "/about/#{name}.html", "day_template.html", locals: { day_name: name, day_info: info, title: name.titleize }, ignore: true
+end
+
 ###
 # Helpers
 ###
@@ -56,10 +62,10 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+   activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+   activate :minify_javascript
 
   # Enable cache buster
   # activate :cache_buster
@@ -69,8 +75,8 @@ configure :build do
 
   # Compress PNGs after build
   # First: gem install middleman-smusher
-  # require "middleman-smusher"
-  # activate :smusher
+   require "middleman-smusher"
+   activate :smusher
 
   # Or use a different image path
   # set :http_path, "/Content/images/"

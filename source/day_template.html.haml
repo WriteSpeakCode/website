@@ -1,0 +1,72 @@
+- day_title = day_name.titleize
+
+%ul.breadcrumb
+  %li
+    = link_to 'About', '/about.html'
+    %span.divider /
+  %li.active= day_title
+
+.learn_do.hero-unit
+  %h2 
+    = day_title 
+    to change the world! 
+
+  %p.milestones
+    - day_info.milestones.each_with_index do |m, i|
+      %strong= m[:header]
+      = succeed '.' do
+        = m[:description]
+      %br
+
+  .learn.day_summary
+    %strong.area 
+      Learn
+    %ul.icons-ul
+      - day_info.learn.each do |item|
+        %li
+          %i.icons-li.icon-plus
+          = item
+
+  .icon-bolt.icon-4x.muted
+
+  .do.day_summary
+    %strong.area 
+      Do
+    %ul.icons-ul
+      - day_info.do.each do |item|
+        %li
+          %i.icons-li.icon-ok
+          = item
+
+  %p.clearfix
+    %a{ href: "/schedule.html##{day_name}" }
+      %strong Schedule
+      %i.icon-arrow-right
+
+  %h4.themes
+    = day_info.themes.join("<span class='icon-star'></span>")
+
+%p
+  %strong= data.days[:each_day][:headline]
+  and will include:
+  %ul
+    - data.days[:each_day][:includes].each do |item|
+      %li= item
+
+.lead
+  .day_icon
+    %span{ class: "icon-#{day_info.icon}" }/
+
+  %p
+    = day_title 
+    to change the world day
+    = day_info.summary
+
+%hr
+
+.credits
+  %p
+    = day_title 
+    to Change the World Day is being crafted by:
+
+  = partial 'people_list', locals: { filter: day_name, sort_include_type: true }

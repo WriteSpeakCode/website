@@ -1,23 +1,23 @@
 ---
 title: Register for Write/Speak/Code
 ---
+.hero-unit
+  %h3 Registration has begun!
 
-.lead.alert.alert-error
-  Registration will begin soon!
 
-/ Begin MailChimp Signup Form
-#mc_embed_signup
-  %form#mc-embedded-subscribe-form.validate{:action => "http://rebeccamiller-webster.us4.list-manage.com/subscribe/post?u=5659d87448185ddd72045cf1a&id=f195dc3634", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
-    %fieldset
-      %legend Join our mailing list to be notified when registration opens.
-    %fieldset.mc-field-group
-      %label{:for => "mce-EMAIL"}
-        Email Address
-        %span.asterisk *
-      %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => ""}/
-    #mce-responses.clear
-      #mce-error-response.response{:style => "display:none"}
-      #mce-success-response.response{:style => "display:none"}
-    .clear
-      %input#mc-embedded-subscribe.btn{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
-/ End mc_embed_signup
+  %a.btn.btn-large.btn-primary{ href: 'http://writespeakcode.ticketleap.com/writespeakcode/', target: '_blank' }
+    %i.icon-ticket
+    Register
+    %i.icon-arrow-right
+  
+%p 
+  Tickets are $211 ($200 + $11 fee) for all 3 days including lunch.
+  %br
+  %b
+    Questions? 
+    %a{ href: 'mailto:info@writespeakcode.com' } Email us at info@writespeakcode.com
+%p
+  %small 
+    We do not have scholarships available at this time.  
+    Depending on sponsorship, we are hoping to offer them. 
+    However, it is possible the event will sell out before we are able to do so.

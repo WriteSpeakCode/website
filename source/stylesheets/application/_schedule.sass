@@ -1,0 +1,56 @@
+.schedule
+  .nav-pills
+    li
+      text-align: center
+      font-weight: bold
+      small
+        font-weight: normal
+        font-style: italic
+
+  h3
+    color: $textColor
+
+  td
+    vertical-align: middle
+
+  .schedules
+    //max-height: 500px
+    //overflow: scroll
+
+  .day_icon
+    @media only screen and (max-width: 767px)
+      display: none
+
+    @media only screen and (min-width: 768px)
+      position: static
+      float: left
+
+  .more_info
+    float: right
+    margin-right: 10px
+
+  .milestones
+    font-family: $serifFontFamily
+    text-align: left
+
+  .themes
+    color: $gray
+    font-weight: bold
+
+  .actions
+    width: $baseFontSize
+    color: $grayLight
+
+  .talk_name
+    color: $yellow
+    font-size: $fontSizeLarge
+    font-family: $serifFontFamily
+
+    .speakers
+      font-size: $baseFontSize
+      font-weight: normal
+      font-style: italic
+      color: $textColor
+
+  .talk_description
+    font-style: italic

@@ -8,7 +8,19 @@
     Empowering ourselves and each other to become
     %br
     thought leaders, conference speakers, &amp; open source contributors.
-  
+
   %a.btn.btn-primary{ href: '/about.html' } 
     Learn More
     %i.icon-arrow-right
+
+%ul.inline.day_list
+  - data.days.days.each do |day|
+    %li
+      .day_icon.small
+        %i{ class: "icon-#{data.schedule.actions[day.first].icon}" }
+      - day.last[:milestones].each_with_index do |m, i|
+        %p.milestones
+          %strong= m[:header]
+          = succeed '.' do
+            = m[:description]
+

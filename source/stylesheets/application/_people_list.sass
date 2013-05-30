@@ -1,0 +1,65 @@
+$person_img_width: 100px
+$company_img_width: 150px
+$img_left_offset: 30px
+
+.people_list
+  list-style-type: none
+  margin-top: 20px
+
+  img
+    width: $person_img_width
+
+  > li
+    clear: both
+    margin: $paddingLarge
+    padding: $paddingLarge
+    min-height: $person_img_width + 60px
+    height: auto
+    border-bottom: 2px solid $grayLight
+
+    .info
+      @media only screen and (max-width: 767px)
+        text-align: center
+        margin: 0 auto 20px auto
+
+      @media only screen and (min-width: 768px)
+        float: left
+
+    p
+      padding-right: 20px
+
+      @media only screen and (min-width: 768px)
+        margin-left: $company_img_width + $img_left_offset
+
+      .name, a.name, a.name:hover, a.name:active, a.name:visited
+        color: $red
+        font-weight: bold
+
+    .social
+      margin-top: 20px
+      text-align: center
+      a
+        font-size: $fontSizeHuge
+
+    .talk
+      font-style: italic
+      font-weight: bold
+      &, a, a:hover, a:visited, a:active
+        color: $yellow
+
+      .name
+        font-size: $fontSizeLarge
+
+    &.company
+      img
+        width: $company_img_width
+
+    &.person
+      .info
+        margin-left: $img_left_offset
+
+.person
+  img
+    @include border-radius(50%)
+    @include box-shadow(2px 2px 5px $gray)
+    border: 2px solid $darkGray

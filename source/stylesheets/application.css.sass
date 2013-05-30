@@ -1,17 +1,35 @@
 @import "colors"
 @import "sizes"
+@import "mixins"
 
 @import "compass"
 @import "bootstrap"
 @import "bootstrap-responsive"
 @import "bourbon"
 
+
+h1, h2, h3, h4
+  color: $red
+  text-align: center
+
 .btn-primary
   @include linear-gradient(top, lighten($button_primary_bg, 5%), $button_primary_bg)
   &:hover, &:active, &.active
     @include linear-gradient(top, darken($button_primary_bg, 5%), darken($button_primary_bg, 5%))
 
- 
+.btn-warning
+  @include linear-gradient(top, lighten($warningText, 5%), $warningText)
+  &:hover, &:active, &.active
+    @include linear-gradient(top, darken($warningText, 5%), darken($warningText, 5%))
+
+.hero-unit
+  background-color: $offWhite
+  border: 1px solid $red
+  text-align: center
+
+  h3
+    color: $red
+
 .header
   text-align: left
   padding-top: 10px
@@ -45,13 +63,8 @@
       padding: 5px 5px 0
       margin:  0 10px
 
-.credits
-  list-style-type: none
-  color: $grayLighter
-  padding: 10px 0
-
-  li
-    margin-bottom: 10px
+.breadcrumb
+  background-color: $offWhite
 
 .navbar
   background-color: $navbarBackground
@@ -60,6 +73,9 @@
   height: $navbarHeight
   padding: $paddingLarge
   margin-top: 10px
+
+  #subscribe-info
+    @include linear-gradient(top, $green, $green)
 
   // for responsive nav
   .nav
@@ -72,6 +88,16 @@
   text-align: center
 
 .sidebar
+  text-align: center
+
+  .label
+    margin: $paddingLarge
+    padding: $paddingLarge
+    text-align: center
+
+  .btn
+    margin: $paddingLarge
+
   .details
     margin: $paddingLarge
     width: 90%
@@ -85,14 +111,25 @@
       display: block
       padding: $paddingMini
       text-align: center
+      @include linear-gradient(top, lighten($warningText, 5%), $warningText)
 
     .detail
       padding: $paddingSmall
       font-size: $fontSizeSmall
+      text-align: left
 
 #main
   header
     text-align: center
+
+#mc-embedded-subscribe-form
+  margin: 0
+  float: right
+  padding: $paddingSmall
+  background-color: $green
+
+  input[type=submit]
+    margin-top: 0px
 
 .change_world
   position: absolute
@@ -101,55 +138,27 @@
   p
     margin: -44px 0 0 24px
   &:before
-    content: "}"
+    content: ""
     font-size: $baseFontSize * 4
 
-// Day Summaries
-$day_icon_unit: 100px
-
-.day_summaries
-  text-align: left
-
-.days
-  list-style-type: none
-
-  li
-    margin-bottom: $day_icon_unit/2
-
-.day_icon
-  @include border-radius(50%)
-  background-color: $day_icon_bg
-  width: $day_icon_unit
-  height: $day_icon_unit
-  text-align: center
-  color: $day_icon_color
-  padding: 10px
-  position: absolute
-  font-size: $day_icon_unit - 10
-
-.day_summary
-  margin-left: $day_icon_unit + 50px
-  .area
-    text-transform: uppercase
-    font-weight: bold
-    color: $day_area_header
-    font-size: $fontSizeHuge
 
 // Nav active states
 
-@each $page in about, register, schedule, sponsor
+@each $page in about, register, schedule, sponsor, speakers
   .#{$page}
     #nav-#{$page}
       @extend .active
 
-//## Page Specific
+footer
+  margin-top: 50px
+  padding: $paddingSmall
+  color: $grayLight
+  ul.nav, li
+    margin: 0
+    padding: 0
+  p
+    font-size: $fontSizeSmall
+    padding-left: 5px
+    text-transform: uppercase
 
-.index
-  .details.what, .details.why
-    display: none
-
-  .hero-unit
-    background-color: $white
-    border: 1px solid $red
-    h3
-      color: $red
+@import "application/*"
