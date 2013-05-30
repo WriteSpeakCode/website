@@ -2,6 +2,8 @@
 title: Schedule for Write/Speak/Code
 ---
 
+- all_speakers = data.people.select { |k,v| v['pages'].try(:include?, 'speaker') }
+
 %ul#day_nav.nav.nav-pills
   %li
     = link_to 'Thursday <br><small>June 20 10am-6pm</small>', "#write"
@@ -51,11 +53,10 @@ title: Schedule for Write/Speak/Code
             %a{ id: item.talk_id }
             %p.talk_name
               = item.talk_name
-              - speakers = data.people.select { |k,v| v['pages'].try(:include?, 'speaker') && v['talk_id'] == item.talk_id }.values
+              - speakers = all_speakers.inject([]) { |r, e| r << link_to(e.last['name'], "/speakers.html##{e.first}") if e.last['talk'] == item.talk_id; r }
               - unless speakers.nil?
                 %br
                 %span.speakers
-                  - speakers.map! { |s| link_to(data.people[s].name, "/speakers.html##{s}") }
                   - speakers.push('<em>more!</em>') if item.more
                   = speakers.to_sentence
             - if item.talk_description

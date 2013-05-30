@@ -113,7 +113,7 @@ op_ed:
   pages:
     - write
     - speaker
-  talk: op_ed_morning
+  talk: op_ed
   type: company
   social:
     twitter: https://twitter.com/TheOpEdProject
@@ -184,7 +184,7 @@ pam_selle:
     twitter: https://twitter.com/pamasaur
     github: https://github.com/pamasaur
   type: person
-  talk: Feminist Models for Open Source Projects
+  talk: feminist_models
 
 camille_acey:
   name: Camille Acey
@@ -328,7 +328,7 @@ frederica_s:
     which can be found at <a href="http://www.fredericastahl.com" target=_blank>www.fredericastahl.com</a>. 
     Frederica has previously spoken at a variety of academic and policy conferences, 
     and is very excited to be joining the conversation on women and technology as 
-    a panelist at <Write/Speak/Code>.
+    a panelist at Write/Speak/Code.
   pages:
     - speaker
   social:
@@ -337,3 +337,24 @@ frederica_s:
   type: person
   talk: speakers_panel
 
+alexis_g:
+  name: Alexis Goldstein  
+  url: http://alexisgo.com/
+  image: alexis.jpg
+  bio:  is an activist, programmer, teacher, and occupier.  She is an instructor for 
+    <a href="http://girldevelopit.com/" target=_blank>Girl Develop It</a> , a contributor at 
+    <a href="http://www.thenation.com/authors/alexis-goldstein">The Nation</a>, 
+    and is completely addicted to <a href="https://twitter.com/alexisgoldstein" target=_blank>twitter</a>.  
+    Alexis also conducts custom technical training through her company, 
+    <a href="http://www.autfaciam.com/" target=_blank>aut faciam</a>. She co-authored the book 
+    <a href="http://www.amazon.com/gp/product/0980846900/?tag=rjmw-20" target=_blank>HTML5 & CSS3 for The Real World</a> 
+    by Sitepoint, and most recently wrote 
+    <a href="http://www.amazon.com/gp/product/0321839609/?tag=rjmw-20" target=_blank>Learning CSS3 Animations</a> 
+    for Pearson.
+  pages:
+    - speaker
+  social:
+    twitter: https://twitter.com/alexisgoldstein
+    github: https://github.com/alexisgo
+  type: person
+  talk: writing_opportunity

@@ -52,10 +52,8 @@ thursday:
       - speak
       - learn
       - action
-    talk_id: op_ed_morning
+    talk_id: op_ed
     talk_name: Foundations of Thought Leadership
-    speakers:
-      - op_ed
     more: true
     talk_description: In our highly-interactive, energetic full-day seminar we explore the 
         source of credibility and how to establish it; how to present ideas 
@@ -77,10 +75,8 @@ thursday:
       - write
       - learn
       - action
-    talk_id: op_ed_afternoon
+    talk_id: op_ed
     talk_name: Foundations of Thought Leadership Cont.
-    speakers:
-      - op_ed
     more: true
     talk_description: In our highly-interactive, energetic full-day seminar we explore the 
         source of credibility and how to establish it; how to present ideas 
@@ -98,12 +94,11 @@ thursday:
       - learn
     talk_id: writing_opportunity
     talk_name: Writing Opportunities + Devs Write Panel
-    speakers:
-      - chrys
     more: true
     talk_description: In this group workshop, we will explore the writing oppurtunities for
         developers &mdash; so much more than blogging! &mdash; and how these 
-        oppurtunities can further your career and your goals.
+        oppurtunities can further your career and your goals.  We'll also hear from 
+        women developers about the ways they use writing in their life and careers.
 
 friday:
   -
@@ -125,9 +120,6 @@ friday:
     talk_description: A panel of experienced and novice women developers will address your
       fears while discussing how they got started speaking, their experience 
       giving talks, and strategies for becoming a fantastic speaker.
-    speakers:
-      - liz_crawford
-    more: true
   -
     actions: 
       - speak
@@ -140,6 +132,14 @@ friday:
     talk_description: Start with fast-paced topic generation exercises you can
       continue to use after this conference.  Then, you'll "Speak Date" your fellow attendees and give a brief talk
       about them. Review yourself speaking on video.
+  -
+    actions: 
+      - write
+      - learn
+    talk_id: proposal_exercise
+    talk_name: How to write a talk proposal
+    talk_description: Learn the ins and outs of talk proposals &mdash; what they
+      are, the sections that matter, and how to write one.
   -
     actions: 
       - group
@@ -156,12 +156,13 @@ friday:
     talk_description: Lunch &amp; Networking
   -
     actions: 
-      - write
       - learn
-    talk_id: proposal_exercise
-    talk_name: How to write a talk proposal
-    talk_description: Learn the ins and outs of talk proposals &mdash; what they
-      are, the sections that matter, and how to write one.
+    talk_id: slides
+    talk_name: Make it pretty and effective
+    talk_description: Let's talk about slides &mdash; making effective slides can 
+      be harder than it looks.  Learn the top tips and tricks for creating a 
+      powerful presentation.  What's the best way to show code? What should you 
+      think about when choosing colors and fonts? 
   -
     actions: 
       - speak
@@ -183,19 +184,7 @@ friday:
       each group's talk proposal.  Then we will discuss what they look for when 
       reviewing talk proposals and speakers and how the process of putting together 
       a conference program works and how you can work it!
-    speakers:
-      - gloria_w
-      - maria_sciarrino
     more: true
-  -
-    actions: 
-      - learn
-    talk_id: slides
-    talk_name: Make it pretty and effective
-    talk_description: Let's talk about slides &mdash; making effective slides can 
-      be harder than it looks.  Learn the top tips and tricks for creating a 
-      powerful presentation.  What's the best way to show code? What should you 
-      think about when choosing colors and fonts? 
   -
     actions: 
       - speak
@@ -214,8 +203,6 @@ friday:
     talk_name: Presentation feedback from expert women
     talk_description: Experienced women speakers will give each attendee concrete and actionable
       feedback on their presentation. 
-    speakers:
-      - rebecca_garcia
     more: true
   -
     actions: 
@@ -241,8 +228,6 @@ saturday:
       - inspire
     talk_id: why_open_source
     talk_name: Why Open Source?
-    speakers:
-      - camille_acey
   -
     actions:
       - speak
@@ -301,9 +286,6 @@ saturday:
       - learn
     talk_id: feminist_models
     talk_name: Feminist Model for Open Source
-    speakers:
-      - corey_latislaw
-      - pam_selle
   -
     actions:
       - code
