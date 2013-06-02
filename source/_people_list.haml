@@ -6,7 +6,7 @@
       %a{ id: k }
       .info
         - if v.image
-          %a{ href: v.url, target: '_blank' }
+          %a.image{ href: v.url, target: '_blank' }
             = image_tag v.image, alt: v.name
         %ul.inline.social
           - (v[:social] || []).each do |type, url|

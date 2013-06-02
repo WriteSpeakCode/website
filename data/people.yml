@@ -53,10 +53,12 @@ rebecca:
     - speak
     - write
     - organizers
+    - speaker
   type: person
   social:
     twitter: http://www.twitter.com/rmillerwebster
     github: http://www.github.com/rmw
+  talk: thursday_welcome
 
 rachel:
   name: Rachel Ober
@@ -81,7 +83,6 @@ rachel:
 
 celia:
   name: Celia La
-  url: http://www.linkedin.com/in/celiala
   image: celia.jpg
   bio: is a .Net/SQL Server developer at <a href='http://mediaradar.com/' target='_blank'>MediaRadar</a>. She co-organizes the <a href='http://meetup.com/tonguetiedtechs' target='_blank'>Tongue-Tied Techs</a> meetup, is the technical co-chair for the <a href='http://unwomen-metrony.org/' target='_blank'>NYC Chapter of UN Women, US National Committee</a> and 
        volunteers for <a href='http://coderdojonyc.com/' target='_blank'>CoderDojo NYC</a>. Celia also is an accomplished jazz vocalist, loves to dance 
@@ -92,6 +93,7 @@ celia:
   social:
     twitter: https://twitter.com/celiala
     github: https://github.com/celiala
+    linkedin: http://www.linkedin.com/in/celiala
   type: person
 
 op_ed:
@@ -175,7 +177,7 @@ pam_selle:
     and open/civic data champion who loves bringing new people into the field 
     and getting them excited about code. She speaks anywhere from local user 
     groups to regional and national conferences on HTML5, CSS, Sass, Python, 
-    Ruby, and JavaScript. She teaches web development and JavaScript in Philadelphia, 
+    Ruby, and JavaScript. She teaches web deeelopment and JavaScript in Philadelphia, 
     has written for .net magazine and other publications, and blogs at 
     <a href="http://thewebivore.com" target=_blank>thewebivore.com</a>.
   pages:
@@ -358,3 +360,46 @@ alexis_g:
     github: https://github.com/alexisgo
   type: person
   talk: writing_opportunity
+
+martha_d:
+  name: Martha Denton
+  url: http://www.ThePresentationSchool.com 
+  image: martha.jpg
+  bio: ', The Founder of <a href="www.ThePresentationSchool.com" target=_blank>The Presentation School</a>, 
+    is a communication strategist and practitioner, who focuses on: helping 
+    speakers understand their audiences, write their content, design 
+    their slides, and deliver the best presentations possible.  She started 
+    doing this at McKinsey & Company, where she was for 11 years.  
+    With The Presentation School, she has worked with a wide range 
+    of individuals from start-ups to Fortune 500 companies to Olympic 
+    Gold Medalists.  She has been proud to serve as Presentation Coach for 
+    <a href="http://www.ignitenyc.org/" target=_blank>Ignite NYC</a> & 
+    <a href="https://twitter.com/tedxharlem" target=_blank>TEDxHarlem</a>, 
+    and has curated rapid fire segments for The Economist.  She has also just signed up for CodeAcademy.'
+  social:
+    twitter: http://twitter.com/marden928
+  pages:
+    - speaker
+  type: person
+  talk: slides
+
+marianne_b:
+  name: Marianne Bellotti
+  image: marianne.jpg
+  bio: is the CTO of Exversion, a freelance developer evangelist and hackathon 
+    vet. She's won thousands of dollars in prizes hacking at events like Startup 
+    Bus, Photo Hack Day I & II, API Hack Day I & II, Hackday.tv, GDI Hackathon 
+    in the Hamptons for Humanity, Startup Weekend NYC, and Meetup's Battle of the 
+    Braces. She's also spoken at events like <a href="http://www.ladieswhocode.com/2012/" target=_blank>Ladies Who Code Conf</a>, 
+    <a href="http://devslovebacon.com/" target=_blank>BACON</a>, and 
+    <a href="http://www.meetup.com/Clojure-NYC/" target=_blank>ClojureNYC</a>.  
+    She hacks in PHP, Python, and Clojure and is particularly interested in 
+    visualizations, data, and machine learning.
+  pages:
+    - speaker
+  social:
+    twitter: https://twitter.com/bellmar
+    github: http://www.github.com/mbellotti
+    linkedin: http:// www.linkedin.com/in/bellmar/
+  type: person
+  talk: speaker_feedback

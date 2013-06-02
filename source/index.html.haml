@@ -1,4 +1,6 @@
+
 %header.hero-unit
+  .alert.alert-warning We are 75% sold out!
   %h3
     The action-oriented, professional development conference
     %br
@@ -9,9 +11,18 @@
     %br
     thought leaders, conference speakers, &amp; open source contributors.
 
-  %a.btn.btn-primary{ href: '/about.html' } 
-    Learn More
-    %i.icon-arrow-right
+  %ul.inline
+    %li
+      %a.btn.btn-info.pull-left{ href: '/about.html' } 
+        Learn More
+        %i.icon-double-angle-right
+    %li
+      %a.btn.btn-primary.pull-left{ href: 'http://writespeakcode.ticketleap.com/writespeakcode/' } 
+        Register
+        %i.icon-double-angle-right
+
+  = partial 'ruby_central'
+
 
 %ul.inline.day_list
   - data.days.days.each do |day|
@@ -24,3 +35,8 @@
           = succeed '.' do
             = m[:description]
 
+%hr
+.platinum_sponsors
+  %p Sponsored by
+  %a{:href => "http://mailchimp.com", target: '_blank'}
+    %img{:src => "/images/mailchimp-400.png"}/

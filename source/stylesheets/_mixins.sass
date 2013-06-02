@@ -19,3 +19,8 @@
 
   @media only screen and (max-width: 768px)
     margin: 0 auto 20px auto
+
+
+@mixin colored-link($color)
+  &, &:hover, &:visited, &:active
+    color: $color

@@ -12,6 +12,10 @@ h1, h2, h3, h4
   color: $red
   text-align: center
 
+a
+  &.primary
+    @include colored-link($red)
+
 .btn-primary
   @include linear-gradient(top, lighten($button_primary_bg, 5%), $button_primary_bg)
   &:hover, &:active, &.active
@@ -21,6 +25,11 @@ h1, h2, h3, h4
   @include linear-gradient(top, lighten($warningText, 5%), $warningText)
   &:hover, &:active, &.active
     @include linear-gradient(top, darken($warningText, 5%), darken($warningText, 5%))
+
+.btn-info
+  @include linear-gradient(top, lighten($infoText, 5%), $infoText)
+  &:hover, &:active, &.active
+    @include linear-gradient(top, darken($infoText, 5%), darken($infoText, 5%))
 
 .hero-unit
   background-color: $offWhite

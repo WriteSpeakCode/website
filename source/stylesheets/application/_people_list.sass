@@ -59,6 +59,9 @@ $img_left_offset: 30px
         margin-left: $img_left_offset
 
 .person
+  a.image
+    @include colored-link($darkGray)
+
   img
     @include border-radius(50%)
     @include box-shadow(2px 2px 5px $gray)

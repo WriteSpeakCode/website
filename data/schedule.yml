@@ -93,12 +93,11 @@ thursday:
       - group
       - learn
     talk_id: writing_opportunity
-    talk_name: Writing Opportunities + Devs Write Panel
+    talk_name: Devs Write Panel
     more: true
-    talk_description: In this group workshop, we will explore the writing oppurtunities for
-        developers &mdash; so much more than blogging! &mdash; and how these 
-        oppurtunities can further your career and your goals.  We'll also hear from 
-        women developers about the ways they use writing in their life and careers.
+    talk_description: In this panel of women tech writers, authors, and technical 
+        publishers, you'll hear about the ways they use writing in their life 
+        and careers and how you can write to change the world!
 
 friday:
   -
@@ -139,7 +138,8 @@ friday:
     talk_id: proposal_exercise
     talk_name: How to write a talk proposal
     talk_description: Learn the ins and outs of talk proposals &mdash; what they
-      are, the sections that matter, and how to write one.
+      are, the sections that matter, and how to write one. Review an actual talk 
+      proposal and feedback from a conference organizer.
   -
     actions: 
       - group
@@ -158,7 +158,7 @@ friday:
     actions: 
       - learn
     talk_id: slides
-    talk_name: Make it pretty and effective
+    talk_name: Creating great presentations
     talk_description: Let's talk about slides &mdash; making effective slides can 
       be harder than it looks.  Learn the top tips and tricks for creating a 
       powerful presentation.  What's the best way to show code? What should you 
