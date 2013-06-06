@@ -3,8 +3,10 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.0.13"
+gem "middleman-smusher"
 gem "haml"
 gem "sass"
 gem "compass"
 gem 'bootstrap-sass', require: false
 gem "bourbon"
+gem "pry"

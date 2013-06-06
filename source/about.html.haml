@@ -5,44 +5,37 @@ title: About Write/Speak/Code
 .lead
   Each of the three days will focus on a single area and consist of highly interactive panels, workshops, and talks. 
 .day_summaries
-  -#.change_world
-    -#%p
-      -#to change
-      -#%br
-      -#the world
   %ul.days
-    %li
-      .day_icon
-        %span.icon-pencil/
-      .day_summary
-        %strong.area write
-        %p
-          %strong.weekday Thursday
-          will challenge you to think more carefully and more expansively about your knowledge and experience, and why it matters.  You will emerge with a powerful argument for an idea or cause you believe in, and a draft of an article or blog post.
-        %p
-          Write to Change the World day is being crafted by 
-          %a{ href: 'http://www.theopedproject.org/', target: '_blank' } The Op-Ed Project.
+    - data.days.days.each do |name, info|
+      %li
+        .day_icon
+          %span{ class: "icon-#{info.icon}" }
+        .day_summary
+          %strong.area= name
+          %p
+            %strong.weekday= info.weekday
+            = info.summary
 
-    %li
-      .day_icon
-        %span.icon-microphone/
-      .day_summary
-        %strong.area speak
-        %p
-          %strong.weekday Friday
-          will give you all the tools necessary to start speaking at conferences. You'll learn how to choose a presentation topic and write conference proposals. You'll also get tips, practice and feedback on creating slides and public speaking. By the end of the day you'll have written a talk proposal and sampled all the steps necessary to become a confident speaker!
-        %p
-          Speak to Change the World Day is being crafted by Celia La, Rachel Ober, and Rebecca Miller-Webster.
-    %li
-      .day_icon
-        %span.icon-code/
-      .day_summary
-        %strong.area code
-        %p
-          %strong.weekday Saturday
-          will focus on publishing open source code and contributing to open source projects. We'll learn about git, licensing, and how to choose projects.  You'll be an open source contributor by the end of the day!
-        %p
-          Code to Change the World Day is being crafted by 
-          %a{ href: 'http://vanessahurst.com/', target: '_blank' } Vanessa Hurst 
-          and 
-          %a{ href: 'http://codemontage.com/', target: '_blank' } Code Montage.
+            %a.primary{ href: "/about/#{name}.html" }
+              Learn more
+              %i.icon-double-angle-right
+
+            %a{ href: "/schedule.html##{name}" }
+              Schedule
+              %i.icon-double-angle-right
+
+          %p
+            = name.titleize
+            to Change the World day is being crafted by
+            - people = data.people.select { |k, v| v.pages.include?(name) }.sort_by { |k, v| v.type + v.name }
+            = succeed '.' do
+              = people.map { |k, v| "<a href='#{v.url}' target=_blank>#{v.name}</a>" }.to_sentence
+
+%hr
+
+%p
+  %strong= data.days[:each_day][:headline]
+  and will include:
+  %ul
+    - data.days[:each_day][:includes].each do |item|
+      %li= item

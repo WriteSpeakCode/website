@@ -2,22 +2,62 @@
 title: Schedule for Write/Speak/Code
 ---
 
-.lead.alert.alert-info
-  We are finalizing the schedule now. Stay tuned!
+- all_speakers = data.people.select { |k,v| v['pages'].try(:include?, 'speaker') }
 
-/ Begin MailChimp Signup Form
-#mc_embed_signup
-  %form#mc-embedded-subscribe-form.validate{:action => "http://rebeccamiller-webster.us4.list-manage.com/subscribe/post?u=5659d87448185ddd72045cf1a&id=f195dc3634", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
-    %fieldset
-      %legend Join our mailing list to get the latest updates.
-    %fieldset.mc-field-group
-      %label{:for => "mce-EMAIL"}
-        Email Address
-        %span.asterisk *
-      %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => ""}/
-    #mce-responses.clear
-      #mce-error-response.response{:style => "display:none"}
-      #mce-success-response.response{:style => "display:none"}
-    .clear
-      %input#mc-embedded-subscribe.btn{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
-/ End mc_embed_signup
+%ul#day_nav.nav.nav-pills
+  %li
+    = link_to 'Thursday <br><small>June 20 10am-6pm</small>', "#write"
+  %li= link_to 'Friday <br><small><em>June 21 10am-6pm</em></small>', '#speak'
+  %li= link_to 'Saturday <br><small><em>June 22 10am-6pm</em></small>', '#code'
+
+.schedules
+  -#{ "data-spy" => "scroll", "data-target" => "#day_nav", "data-offset" => 0 }
+  - [:write, :speak, :code].each do |day|
+    %a{ id: day }
+
+    - weekday = data.schedule.days[day]
+    %h2= weekday.titleize
+
+    %h3
+      = day.to_s.titleize
+      to Change the World!
+
+    .day_icon.small
+      %i{ class: "icon-#{data.schedule.actions[day].icon}" }
+
+    - day_info = data.days.days[day]
+    .day_header
+      %p.milestones
+        - day_info.milestones.each_with_index do |m, i|
+          %strong= m[:header]
+          = succeed '.' do
+            = m[:description]
+          %br
+
+      %p.themes= day_info.themes.join("<span class='icon-star'></span>")
+
+    %a.more_info{ href: "/about/#{day}.html" }
+      More
+      %i.icon-double-angle-right
+
+    %table.table.table-bordered
+      - data.schedule[weekday].map { |item| OpenStruct.new(item) }.each do |item|
+        %tr
+          -#%td.time
+          %td.actions
+            %ul.inline
+              - item.actions.each do |action_code|
+                - action = data.schedule.actions[action_code]
+                %i{ class: "icon-#{action.icon}", alt: action.tooltip }
+          %td.event
+            %a{ id: item.talk_id }
+            %p.talk_name
+              = item.talk_name
+              - speakers = all_speakers.inject([]) { |r, e| r << link_to(e.last['name'], "/speakers.html##{e.first}") if e.last['talk'] == item.talk_id; r }
+              - unless speakers.nil?
+                %br
+                %span.speakers
+                  - speakers.push('<em>more!</em>') if item.more
+                  = speakers.to_sentence
+            - if item.talk_description
+              %p.talk_description= item.talk_description
