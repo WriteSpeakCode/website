@@ -204,15 +204,6 @@ friday:
     talk_description: Experienced women speakers will give each attendee concrete and actionable
       feedback on their presentation. 
     more: true
-  -
-    actions: 
-      - write
-      - group
-      - learn
-    talk_id: speaking_opportunities
-    talk_name: Speak opportunities
-    talk_description: What speaking opportunities are available to you? How do 
-      you evaluate your options? When is the right time in your career to speak? 
 
 saturday:
   -

@@ -177,7 +177,7 @@ pam_selle:
     and open/civic data champion who loves bringing new people into the field 
     and getting them excited about code. She speaks anywhere from local user 
     groups to regional and national conferences on HTML5, CSS, Sass, Python, 
-    Ruby, and JavaScript. She teaches web deeelopment and JavaScript in Philadelphia, 
+    Ruby, and JavaScript. She teaches web development and JavaScript in Philadelphia, 
     has written for .net magazine and other publications, and blogs at 
     <a href="http://thewebivore.com" target=_blank>thewebivore.com</a>.
   pages:
@@ -401,5 +401,43 @@ marianne_b:
     twitter: https://twitter.com/bellmar
     github: http://www.github.com/mbellotti
     linkedin: http:// www.linkedin.com/in/bellmar/
+  type: person
+  talk: speaker_feedback
+kimberly_c:
+  name: Kimberly Campbell
+  image: kimberly_campbell.jpg
+  bio: is a communications professional whose experience spans a broad range of 
+    industries in the areas of business, philanthropy, and health and human services 
+    development. Kimberly has spoken extensively on successful communications 
+    strategies, corporate sustainability, and combating gender stereotypes in the 
+    workplace, with diverse audiences such as the <a target="_blank" 
+    href="http://www.aauw.org/">American Association of University Women</a>, 
+    <a target="_blank" href="http://www.unwomen.org/">UN Women</a>, the <a 
+    target="_blank" href="http://www.shrm.org/Pages/default.aspx">Society of Human Resource 
+    Management</a>, and the <a target="_blank" href="http://www.nyscadv.org/delta/">New York State 
+    DELTA Coalition</a>.
+  pages:
+    - speaker
+  social:
+    twitter: https://twitter.com/kimberly119
+    linkedin: http://www.linkedin.com/in/kimberlyhcampbell
+  type: person
+  talk: speaker_feedback
+
+marisa_w:
+  name: Marisa Warren
+  image: marisa_warren.jpg
+  url: http://www.cavalo-consulting.com/
+  bio: is the founder of <a target="_blank" href="http://www.cavalo-consulting.com/">Cavalo 
+    Consulting LLC</a>, and a highly awarded Global Channels Executive with 17 years 
+    experience working for companies such as SAP and Microsoft. She also currently 
+    serves as President for <a target="_blank" 
+    href="https://www.americanaustralian.org/awny/">Australian Women in New York</a>, 
+    and is an Advisory Board Member for the <a target="_blank" 
+    href="http://www.glamourgals.org/">GlamourGals Foundation</a>.
+  pages:
+    - speaker
+  social:
+    twitter: https://twitter.com/MarisaWarren16
   type: person
   talk: speaker_feedback
