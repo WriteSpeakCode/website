@@ -54,7 +54,6 @@ thursday:
       - action
     talk_id: op_ed
     talk_name: Foundations of Thought Leadership
-    more: true
     talk_description: In our highly-interactive, energetic full-day seminar we explore the 
         source of credibility and how to establish it; how to present ideas 
         quickly and powerfully under pressure; the components of powerful, 
@@ -77,7 +76,6 @@ thursday:
       - action
     talk_id: op_ed
     talk_name: Foundations of Thought Leadership Cont.
-    more: true
     talk_description: In our highly-interactive, energetic full-day seminar we explore the 
         source of credibility and how to establish it; how to present ideas 
         quickly and powerfully under pressure; the components of powerful, 
@@ -94,7 +92,6 @@ thursday:
       - learn
     talk_id: writing_opportunity
     talk_name: Devs Write Panel
-    more: true
     talk_description: In this panel of women tech writers, authors, and technical 
         publishers, you'll hear about the ways they use writing in their life 
         and careers and how you can write to change the world!
@@ -184,7 +181,6 @@ friday:
       each group's talk proposal.  Then we will discuss what they look for when 
       reviewing talk proposals and speakers and how the process of putting together 
       a conference program works and how you can work it!
-    more: true
   -
     actions: 
       - speak
@@ -203,7 +199,6 @@ friday:
     talk_name: Presentation feedback from expert women
     talk_description: Experienced women speakers will give each attendee concrete and actionable
       feedback on their presentation. 
-    more: true
 
 saturday:
   -

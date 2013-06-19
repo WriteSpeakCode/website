@@ -403,6 +403,7 @@ marianne_b:
     linkedin: http:// www.linkedin.com/in/bellmar/
   type: person
   talk: speaker_feedback
+
 kimberly_c:
   name: Kimberly Campbell
   image: kimberly_campbell.jpg
@@ -441,3 +442,84 @@ marisa_w:
     twitter: https://twitter.com/MarisaWarren16
   type: person
   talk: speaker_feedback
+
+francis_h:
+  name: Francis Hwang
+  image: francis.jpeg
+  url: http://fhwang.net/
+  bio: is a writer and software engineer. An active member of the Ruby community, 
+    he was the founder of NYC.rb, founding organizer of GoRuCo, and a four-time 
+    RubyConf speaker. He is currently enjoying his Brooklyn-based consulting 
+    lifestyle.
+  pages:
+    - speaker
+  social:
+    github: https://github.com/fhwang
+    twitter: https://twitter.com/fhwang
+  type: person
+  talk: conf_organizers_panel
+
+debra_wc:
+  name: Debra Williams-Cauley
+  url: http://www.informit.com/about/write_for_us.aspx
+  image: debra.jpg
+  bio:  has published professional programming books with a strong focus on the 
+    free and open software community for over twenty years. Her current book list 
+    centers on data analytics, the full Linux stack, and dynamic languages.
+  pages:
+    - speaker
+  social:
+    linkedin: http://www.linkedin.com/pub/debra-williams-cauley/2/a57/458
+  type: person
+  talk: writing_opportunity
+
+martha_s:
+  name: Martha Southgate
+  url: http://www.marthasouthgate.com/
+  image: martha_s.jpg
+  bio: is an OpEd Project Fellowship Leader and the author of four novels; her 
+    newest is <a href="http://www.amazon.com/gp/product/B006QS0BTU/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B006QS0BTU&linkCode=as2&tag=rjmw-20" target=_blank>The Taste of Salt</a>, 
+    published by Algonquin Books. Her previous novel, 
+    <a href="http://www.amazon.com/Third-Girl-Left-Martha-Southgate/dp/061877338X/?t=rjmw-20" target=_blank>Third Girl from the Left</a>, 
+    won the Best Novel of the Year award from the 
+    Black Caucus of the American Library Association and was shortlisted for the 
+    PEN/Beyond Margins Award and the Hurston/Wright Legacy award. Her novel 
+    <a href="http://www.amazon.com/gp/product/0743227212/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0743227212&linkCode=as2&tag=rjmw-20" target=_blank>The Fall of Rome</a> 
+    received the 2003 Alex Award from the American Library Association 
+    and was named one of the best novels of 2002 by Jonathan Yardley of the Washington 
+    Post.  She is also the author of <a href="http://www.amazon.com/gp/product/0385321910/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0385321910&linkCode=as2&tag=rjmw-20" target=_blank>Another Way to Dance</a>, 
+    which won the Coretta Scott King Genesis Award for Best First Novel. She 
+    received a 2002 New York Foundation for the Arts grant and has received 
+    fellowships from the MacDowell Colony, the Virginia Center for the Creative 
+    Arts and the Bread Loaf Writers Conference. Her July 2007 essay from the 
+    New York Times Book Review, “Writers Like Me” received considerable notice 
+    and appears in the anthology Best African-American Essays 2009.  Previous 
+    non-fiction articles have appeared in The New York Times Magazine, O, 
+    Premiere, and Essence.
+  pages:
+    - speaker
+  talk: op_ed
+  type: person
+  social:
+    twitter: https://twitter.com/mesouthgate
+    facebook: https://www.facebook.com/martha.southgate1
+
+chloe_a:
+  name: Chloe Angyal
+  url: http://chloesangyal.com/
+  image: chloe_a.jpg
+  bio: is a writer and commentator from Sydney, Australia. She is based in New 
+    York City. Chloe is an Editor at <a href="http://feministing.com/" target=_blank>Feministing</a>, 
+    where she blogs about gender, sex, politics, pop culture and body image. Her 
+    freelance writing has been published in The Atlantic, The LA Times, The Guardian, 
+    Jezebel, Slate, and Salon. Her writing covers a range of topics, including 
+    sexual assault prevention, women in politics, and reproductive rights.  She 
+    has also appeared on MSNBC, Al Jazeera English, and NPR.  Chloe’s academic 
+    work focuses on Hollywood romantic comedies; her doctoral thesis, currently 
+    in progress, is about how the genre depicts gender, sex and love.
+  pages:
+    - speaker
+  talk: op_ed
+  type: person
+  social:
+    twitter: https://twitter.com/chloeangyal
