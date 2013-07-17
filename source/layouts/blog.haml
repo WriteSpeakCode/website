@@ -1,0 +1,28 @@
+- wrap_layout :base_layout do
+  - wrap_layout :sub_main_layout do
+    = yield
+
+  - wrap_layout :sub_sidebar_layout do
+    .details
+      %strong Recent Articles
+      %ul
+        - blog.articles[0...10].each do |article|
+          %li
+            = link_to article.title, article
+            %span= article.date.strftime('%b %e')
+
+    .details
+      %strong Tags
+      %ul
+        - blog.tags.each do |tag, articles|
+          %li
+            = link_to tag, tag_path(tag)
+            (#{articles.size})
+
+    -#.details
+      -#%strong By Year
+      -#%ul
+        -#- blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+          -#%li
+            -#= link_to year, blog_year_path(year)
+            -#(#{articles.size})

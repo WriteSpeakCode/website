@@ -1,0 +1,102 @@
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    / Always force latest IE rendering engine or request Chrome Frame
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{ name: "HandheldFriendly" , content: "True" }/
+    %meta{ name: "MobileOptimized" , content: "320" }/
+    %meta{ name: "viewport" , content: "width=device-width, initial-scale=1.0" }/
+    / Use title if it's in the page YAML frontmatter
+    %title= data.page.title || "<Write/Speak/Code> Conference for Women Developers"
+    = stylesheet_link_tag "normalize", "application"
+    %link{ href: "//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css", rel: "stylesheet", media: "screen", type: "text/css" }
+
+  %body{:class => page_classes}
+    .container-fluid.header_container
+      .header.row-fluid
+        .span10
+          %a{ href: '/' }
+            = image_tag 'writespeakcode_logo.png', class: 'logo'
+          %h1.pull-left
+            Write/Speak/Code
+        .span2
+          .info
+            %ul.inline.social
+              %li
+                %a{ href: 'http://www.twitter.com/writespeakcode' }
+                  %span.icon-twitter
+              %li
+                %a{ href: 'http://www.github.com/writespeakcode' }
+                  %span.icon-github
+              %li
+                %a{ href: 'mailto:info@writespeakcode.com' }
+                  %span.icon-envelope
+            = image_tag 'writespeakcode_details.png', width: '178', height: '21'
+      .row-fluid
+        .span12
+          %nav.navbar
+            %a.btn.btn-navbar{ :"data-toggle" => "collapse", :"data-target" => "#main-nav" }
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+
+            %a#subscribe-info.btn-navbar{ :"data-toggle" => "collapse", :"data-target" => "#subscribe-nav" }
+              %span.icon-info-sign
+
+            #main-nav.nav-collapse.collapse
+              %ul.nav
+                %li#nav-about.dropdown
+                  %a.dropdown-toggle{ href: '#', 'data-toggle' => 'dropdown' } 
+                    About
+                    %b.caret
+                  %ul.dropdown-menu
+                    %li= link_to 'Summary', '/about.html'
+                    %li.divider
+                    %li= link_to 'Write', '/about/write.html'
+                    %li= link_to 'Speak', '/about/speak.html'
+                    %li= link_to 'Code', '/about/code.html'
+                    %li.divider
+                    %li= link_to 'Organizers', '/about/organizers.html'
+                    %li= link_to 'Volunteer', '/volunteer.html'
+
+                %li.divider-vertical
+                %li#nav-register= link_to "Register", '/register.html'
+                %li.divider-vertical
+                %li#nav-schedule= link_to "Schedule", '/schedule.html'
+                %li.divider-vertical
+                %li#nav-speakers= link_to 'Speakers', '/speakers.html'
+                %li.divider-vertical
+                %li#nav-sponsor= link_to "Sponsor", '/sponsor.html'
+
+            #subscribe-nav.nav-collapse.collapse
+              = partial 'mailchimp'
+
+    .container-fluid
+      .row-fluid
+        = yield
+
+    .row-fluid
+      %footer.span12
+        %ul.nav.inline
+          %li
+            %a{ href: '/code-of-conduct.html' }
+              Code of Conduct
+          %li.divider /
+          %li
+            = link_to "Volunteer", '/volunteer.html'
+          %li.divider /
+          %li
+            = link_to "Who we are", '/about/organizers.html'
+          %li.divider /
+          %li
+            &copy; Rebecca Miller-Webster
+          %li
+            %i.icon-heart
+            Logo design by 
+            McKenna Lowry
+            and
+            Maryanne Ko
+
+  %script{ src: "http://code.jquery.com/jquery.js" }
+  = javascript_include_tag  "application"

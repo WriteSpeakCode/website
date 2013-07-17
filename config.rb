@@ -59,6 +59,12 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :blog do |blog|
+  blog.prefix = "blog"
+  #blog.permalink = ":year/:month/:title.html"
+end
+page 'blog/*', layout: :blog
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

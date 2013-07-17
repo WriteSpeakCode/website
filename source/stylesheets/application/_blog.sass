@@ -1,0 +1,24 @@
+.blog
+  h2, h3, h4
+    color: $darkGray
+
+  .callout, .takeaway
+    @extend .alert
+
+    p 
+      padding: $paddingLarge
+      padding-right: 0
+      font-size: $fontSizeLarge
+
+    &.pull-right
+      margin: $paddingSmall
+    
+  .callout
+    @extend .alert-info
+
+  .takeaway
+    @extend .alert-error
+    margin-top: 60px
+
+    p
+      font-weight: bold
