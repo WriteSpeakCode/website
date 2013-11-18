@@ -2,6 +2,7 @@
 title: Yes, Virginia, You Are an Expert
 date: 2013-07-15 22:10 UTC
 social: true
+author: Alli Treman
 ---
 
 # Yes, Virginia, you are an expert
