@@ -2,11 +2,11 @@
 title: "Open Source: The Whys and Hows"
 date: 2013-11-16 22:10 UTC
 social: true
-author: NEED_AUTHOR_NAME
+author: Alli Treman
 ---
 
 # Open Source: The Whys and Hows
-#### by NEED_AUTHOR_NAME
+#### by Alli Treman
 
 Many programmers, both new and seasoned, have heard the advice:
 

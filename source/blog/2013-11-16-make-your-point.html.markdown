@@ -2,11 +2,11 @@
 title: "Make Your Point: Op-Ed and Argument Writing"
 date: 2013-11-16 22:10 UTC
 social: true
-author: NEED_AUTHOR_NAME
+author: Alli Treman
 ---
 
 # Make Your Point: Op-Ed and Argument Writing with The OpEd Project
-#### by NEED_AUTHOR_NAME
+#### by Alli Treman
 
 Our seminar leaders from The OpEd Project, Chloe Angyal and Martha Southgate, taught us about writing and polishing op-eds as a way to share our expert knowledge with those who need to hear it.
 
