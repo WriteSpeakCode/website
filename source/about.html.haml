@@ -20,17 +20,6 @@ title: About Write/Speak/Code
               Learn more
               %i.icon-double-angle-right
 
-            %a{ href: "/schedule.html##{name}" }
-              Schedule
-              %i.icon-double-angle-right
-
-          %p
-            = name.titleize
-            to Change the World day is being crafted by
-            - people = data.people.select { |k, v| v.pages.include?(name) }.sort_by { |k, v| v.type + v.name }
-            = succeed '.' do
-              = people.map { |k, v| "<a href='#{v.url}' target=_blank>#{v.name}</a>" }.to_sentence
-
 %hr
 
 %p
@@ -39,3 +28,10 @@ title: About Write/Speak/Code
   %ul
     - data.days[:each_day][:includes].each do |item|
       %li= item
+
+%hr
+
+%em 
+  Please note that weekdays and activities for each day are still tenative for 2014.
+  We are exploring changes to make 2014 more awesome.  The general format and 
+  themes will remain the same.

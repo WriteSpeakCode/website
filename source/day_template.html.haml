@@ -38,11 +38,6 @@
           %i.icons-li.icon-ok
           = item
 
-  %p.clearfix
-    %a{ href: "/schedule.html##{day_name}" }
-      %strong Schedule
-      %i.icon-double-angle-right
-
   %h4.themes
     = day_info.themes.join("<span class='icon-star'></span>")
 
@@ -64,9 +59,7 @@
 
 %hr
 
-.credits
-  %p
-    = day_title 
-    to Change the World Day is being crafted by:
-
-  = partial 'people_list', locals: { filter: day_name, sort_include_type: true }
+%em 
+  Please note that weekdays and activities for each day are still tenative for 2014.
+  We are exploring changes to make 2014 more awesome.  The general format and 
+  themes will remain the same.
