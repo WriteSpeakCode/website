@@ -6,7 +6,7 @@ author: Alli Treman
 ---
 
 # Public Speaking Tips for Technical People
-#### by Alli Treman
+#### by [Alli Treman](http://www.allirense.com/)
 
 One of the great things about Speak Day was that many of the experts who came to speak with us about speaking hadn’t always been experts. Many of them have, and still do, experience many of the same fears about public speaking that we do. Given that background, their tips for presenting at a tech conference, or any other public speaking event, really hit home. 
 

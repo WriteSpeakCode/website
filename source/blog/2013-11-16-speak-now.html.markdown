@@ -6,7 +6,7 @@ author: Alli Treman
 ---
 
 # Speak Now! Tips on Proposal Writing for Tech Conferences
-#### by Alli Treman
+#### by [Alli Treman](http://www.allirense.com/)
 
 Speak Day focused primarily on speaking at tech conferences, and the way you become a speaker at a tech conference is by submitting a proposal. If you’re familiar with academic proposals, tech proposals are quite different. Most tech conferences are looking for a title and a description, nothing more. Sometimes they ask for an abstract and/or reviewer notes. Make sure you follow the proposal submission guidelines for the talk you’re submitting your proposal to. Here are some more proposal tips from conference organizers and other experts:
 
