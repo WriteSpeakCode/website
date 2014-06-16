@@ -3,22 +3,34 @@
     = yield
 
   - wrap_layout :sub_sidebar_layout do
-    %h4 Stay tuned for 2014 updates!
-
+    %h4 Tickets on sale & CFP open!
     .details.what
       %strong what
       .detail
         %p
           Write/Speak/Code is a 3-day action-oriented conference 
           for women developers.
+        %p
+          = link_to('Buy tickets!', 'https://ti.to/rmw/writespeakcode-2014')
+        %p
+          Call for proposals and panelists!
+          = link_to('Apply to CFP.', 'https://ti.to/rmw/writespeakcode-2014')
     .details.when
       %strong when
       .detail
         %p
-          Spring 2014
+          August 18-20th, 2014
+    .details.where
+      %strong where
+      .detail
         %p
-          Join our mailing list for updates on 2014!
-        = partial 'mailchimp'
+          Write/Speak/Code has pa`rtnered with 
+          = link_to('NYU ITP', 'http://itp.nyu.edu/itp/') 
+          for a bigger conference. 
+        %p
+          721 Broadway
+          %br
+          New York, NY 10003
     .details.why
       %strong Why
       .detail

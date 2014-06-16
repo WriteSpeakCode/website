@@ -45,20 +45,9 @@
 
             #main-nav.nav-collapse.collapse
               %ul.nav
-                %li#nav-about.dropdown
-                  %a.dropdown-toggle{ href: '#', 'data-toggle' => 'dropdown' } 
-                    About
-                    %b.caret
-                  %ul.dropdown-menu
-                    %li= link_to 'Summary', '/about.html'
-                    %li.divider
-                    %li= link_to 'Write', '/about/write.html'
-                    %li= link_to 'Speak', '/about/speak.html'
-                    %li= link_to 'Code', '/about/code.html'
-                    %li.divider
-                    %li= link_to 'Organizers', '/about/organizers.html'
-                    %li= link_to 'Volunteer', '/volunteer.html'
-
+                %li#nav-blog= link_to "Tickets", 'https://ti.to/rmw/writespeakcode-2014'
+                %li.divider-vertical
+                %li#nav-blog= link_to "CFP", 'http://bitly.com/wsc-cfp-14'
                 %li.divider-vertical
                 %li#nav-blog= link_to "Blog", '/blog/'
                 %li.divider-vertical
