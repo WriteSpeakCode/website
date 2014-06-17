@@ -1,7 +1,7 @@
 days:
-  write: thursday
-  speak: friday
-  code: saturday
+  write: monday
+  speak: tuesday
+  code: wednesday
 
 actions:
   learn:
@@ -39,7 +39,7 @@ actions:
     tooltip: Inspiration!
 
 
-thursday:
+monday:
   -
     actions: 
       - talk
@@ -96,7 +96,7 @@ thursday:
         publishers, you'll hear about the ways they use writing in their life 
         and careers and how you can write to change the world!
 
-friday:
+tuesday:
   -
     actions: 
       - group
@@ -200,7 +200,7 @@ friday:
     talk_description: Experienced women speakers will give each attendee concrete and actionable
       feedback on their presentation. 
 
-saturday:
+wednesday:
   -
     actions: 
       - talk

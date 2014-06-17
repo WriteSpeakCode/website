@@ -9,7 +9,7 @@ each_day:
 
 days:
   write:
-    weekday: Thursday
+    weekday: Monday
     icon: pencil
     summary:
       will challenge you to think more carefully and more expansively about
@@ -20,7 +20,7 @@ days:
     milestones:
       -
         header: Write
-        description: an outline and article draft
+        description: list a topics to write about and an outline and draft of one topic.
       -
         header: Craft
         description: a bio that best highlights your expertise &mdash; you are an expert
@@ -35,9 +35,8 @@ days:
     do:
       - frame yourself as an expert
       - create an article outline with three powerful pieces of evidence
-      - get feedback on an argument from a peer and a seasoned journalist
       - practice responding to criticism of your argument
-      - analyze other's writings to identify the important parts and why it worked
+      - generate a list of topics to write or speak about
 
     themes:
       - Solidify your expertise
@@ -45,7 +44,7 @@ days:
       - Share knowledge
 
   speak:
-    weekday: Friday
+    weekday: Tuesday
     icon: microphone
     summary:
       will give you all the tools necessary to speak powerfully at
@@ -81,7 +80,7 @@ days:
 
   code:
     icon: code
-    weekday: Saturday
+    weekday: Wednesday
     summary:
       will focus on publishing open source code and contributing to open
       source projects. We'll learn about git, licensing, and how to choose
