@@ -1,14 +1,14 @@
-- wrap_layout :base_layout do
-  - wrap_layout :sub_main_layout do
+= wrap_layout :base_layout do
+  = wrap_layout :sub_main_layout do
     = yield
 
-  - wrap_layout :sub_sidebar_layout do
+  = wrap_layout :sub_sidebar_layout do
     %h4 Tickets on sale & CFP open!
     .details.what
       %strong what
       .detail
         %p
-          Write/Speak/Code is a 3-day action-oriented conference 
+          Write/Speak/Code is a 3-day action-oriented conference
           for women developers.
         %p
           = link_to('Buy tickets!', 'https://ti.to/rmw/writespeakcode-2014')
@@ -24,9 +24,9 @@
       %strong where
       .detail
         %p
-          Write/Speak/Code has pa`rtnered with 
-          = link_to('NYU ITP', 'http://itp.nyu.edu/itp/') 
-          for a bigger conference. 
+          Write/Speak/Code has partnered with
+          = link_to('NYU ITP', 'http://itp.nyu.edu/itp/')
+          for a bigger conference.
         %p
           721 Broadway
           %br
@@ -35,5 +35,5 @@
       %strong Why
       .detail
         %p
-          Empowering ourselves and each other to become thought leaders, 
+          Empowering ourselves and each other to become thought leaders,
           conference speakers, and open source contributors.
