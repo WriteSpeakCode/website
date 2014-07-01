@@ -1,8 +1,8 @@
-- wrap_layout :base_layout do
-  - wrap_layout :sub_main_layout do
+= wrap_layout :base_layout do
+  = wrap_layout :sub_main_layout do
     = yield
 
-  - wrap_layout :sub_sidebar_layout do
+  = wrap_layout :sub_sidebar_layout do
     .details
       %strong Recent Articles
       %ul
