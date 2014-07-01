@@ -7,7 +7,7 @@ author: Alli Treman
 
 # Yes, Virginia, you are an expert
 ### Write Day -- a first look from the trenches
-#### by Alli Treman
+#### by [Alli Treman](http://www.allirense.com/)
 
 I can’t say how relieved I was that [The OpEd Project](http://www.theopedproject.org/) 
 leaders [Chloe Angyal](http://chloesangyal.com/) and [Martha Southgate](http://www.marthasouthgate.com/) didn’t give us a blank page and ask us to free write. Before we’d even written more than five sentences we were armed with techniques for considering topics and opinions to present to the world. We see experts every day on NPR, writing books, and speaking at conferences, and Chloe and Martha gave us the tools and confidence to think of ourselves as experts, too.

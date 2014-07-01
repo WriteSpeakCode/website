@@ -6,7 +6,7 @@ author: Alli Treman
 ---
 
 # Open Source: The Whys and Hows
-#### by Alli Treman
+#### by [Alli Treman](http://www.allirense.com/)
 
 Many programmers, both new and seasoned, have heard the advice:
 
