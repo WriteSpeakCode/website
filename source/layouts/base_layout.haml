@@ -20,6 +20,9 @@
             = image_tag 'writespeakcode_logo.png', class: 'logo'
           %h1.pull-left
             Write/Speak/Code
+          %small.muted empowering women software developers to become
+          %br
+          %em.text-warning Thought Leaders, Speakers, &amp; Open Source Contributors
         .span2
           .info
             %ul.inline.social
@@ -57,10 +60,8 @@
                     %li= link_to 'Code', '/about/code.html'
                     %li.divider
                     %li= link_to 'Organizers', '/about/organizers.html'
-                    %li= link_to 'Volunteer', '/volunteer.html'
-                %li#nav-blog= link_to "Tickets", 'https://ti.to/rmw/writespeakcode-2014'
                 %li.divider-vertical
-                %li#nav-blog= link_to "CFP", 'http://bitly.com/wsc-cfp-14'
+                %li#nav-sponsor= link_to "Testimonials", '/testimonials.html'
                 %li.divider-vertical
                 %li#nav-blog= link_to "Blog", '/blog/'
                 %li.divider-vertical
@@ -74,14 +75,31 @@
         = yield
 
     .row-fluid
+      .span12
+        .platinum_sponsors.main_sponsors
+          %ul.inline
+            %li
+              .day_icon
+                %i.icon-pencil
+            %li
+              .day_icon
+                %i.icon-microphone
+            %li
+              .day_icon
+                %i.icon-code
+
+          %p
+            %em Write/Speak/Code 2014 would not be possible without the support of our sponsor.
+          %h3 Thank You
+          %p
+            %a{ href: 'http://pivotallabs.com' }
+              = image_tag '/images/pivotal-300.png'
+    .row-fluid
       %footer.span12
         %ul.nav.inline
           %li
             %a{ href: '/code-of-conduct.html' }
               Code of Conduct
-          %li.divider /
-          %li
-            = link_to "Volunteer", '/volunteer.html'
           %li.divider /
           %li
             = link_to "Who we are", '/about/organizers.html'

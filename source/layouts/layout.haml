@@ -1,39 +1,28 @@
 = wrap_layout :base_layout do
-  = wrap_layout :sub_main_layout do
-    = yield
+  -#= wrap_layout :sub_main_layout do
+  = yield
 
-  = wrap_layout :sub_sidebar_layout do
-    %h4 Tickets on sale & CFP open!
-    .details.what
-      %strong what
-      .detail
-        %p
-          Write/Speak/Code is a 3-day action-oriented conference
-          for women developers.
-        %p
-          = link_to('Buy tickets!', 'https://ti.to/rmw/writespeakcode-2014')
-        %p
-          Call for proposals and panelists!
-          = link_to('Apply to CFP.', 'https://ti.to/rmw/writespeakcode-2014')
-    .details.when
-      %strong when
-      .detail
-        %p
-          August 18-20th, 2014
-    .details.where
-      %strong where
-      .detail
-        %p
-          Write/Speak/Code has partnered with
-          = link_to('NYU ITP', 'http://itp.nyu.edu/itp/')
-          for a bigger conference.
-        %p
-          721 Broadway
-          %br
-          New York, NY 10003
-    .details.why
-      %strong Why
-      .detail
-        %p
-          Empowering ourselves and each other to become thought leaders,
-          conference speakers, and open source contributors.
+  -#= wrap_layout :sub_sidebar_layout do
+    -#.details.what
+      -#%strong what
+      -#.detail
+        -#%p
+          -#Write/Speak/Code is a 3-day action-oriented conference
+          -#for women developers.  Each day will have talks, panels, and intensive, 
+          -#hands-on workshops.
+
+      -#.details.why
+        -#%strong Why
+        -#.detail
+          -#%p
+            -#Empowering ourselves and each other to become thought leaders,
+            -#conference speakers, and open source contributors.
+
+:javascript
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40295985-1', 'auto');
+  ga('send', 'pageview');
