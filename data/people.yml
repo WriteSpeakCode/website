@@ -1,6 +1,6 @@
 vanessa:
   name: Vanessa Hurst
-  image: vhurst.jpeg
+  image: organizers/vhurst.jpeg
   url: http://vanessahurst.com
   bio: is a data-focused technologist and advocate of coding for humanity, 
        currently building <a href="http://codemontage.com" target="_blank">CodeMontage</a>. 
@@ -21,7 +21,7 @@ vanessa:
 code_montage:
   name: Code Montage
   url: http://codemontage.com
-  image: code_montage.png
+  image: sponsors/code_montage.png
   bio: promotes social innovation while helping coders improve their skills.
     CodeMontage was born out of the belief that computing is the most efficient 
     way to improve the human experience, and that software developers become the 
@@ -39,7 +39,7 @@ code_montage:
 rebecca:
   name: Rebecca Miller-Webster
   url: http://www.rebeccamiller-webster.com
-  image: rebecca-web1-sq.jpg
+  image: organizers/rebecca-web1-sq.jpg
   bio: is a software engineer, conference organizer, and teacher at 
     <a href="http://www.devbootcamp.com" target=_blank">Dev Bootcamp</a>.
     She's been developing software professionally for over 10 years 
@@ -65,7 +65,7 @@ rebecca:
 rachel:
   name: Rachel Ober
   url: http://rachelober.com
-  image: rachel.jpg
+  image: organizers/rachel.jpg
   bio: is a developer at <a href="http://paperlesspost.com" target=_blank>
     Paperless Post</a> in New York City. She helps co-organize
     <a href="http://meetup.com/NYC-Ruby-Women" target=_blank>NYC Ruby Women</a>,
@@ -85,7 +85,7 @@ rachel:
 
 celia:
   name: Celia La
-  image: celia.jpg
+  image: organizers/celia.jpg
   bio: is a .Net/SQL Server developer at <a href='http://mediaradar.com/' target='_blank'>MediaRadar</a>. She co-organizes the <a href='http://meetup.com/tonguetiedtechs' target='_blank'>Tongue-Tied Techs</a> meetup, is the technical co-chair for the <a href='http://unwomen-metrony.org/' target='_blank'>NYC Chapter of UN Women, US National Committee</a> and 
        volunteers for <a href='http://coderdojonyc.com/' target='_blank'>CoderDojo NYC</a>. Celia also is an accomplished jazz vocalist, loves to dance 
        bhangra and volunteer for <a href='http://rightrides.org/'>RightRides.org</a>.
@@ -101,7 +101,7 @@ celia:
 chrys:
   name: Chrys Wu
   url: http://about.chryswu.com/
-  image: chrys.jpg
+  image: organizers/chrys.jpg
   bio: is a journalist and user engagement strategist who works with businesses 
     interested in deepening connection to their audiences through research, 
     community-building strategy and user-centric design. She founded the coding 

@@ -17,7 +17,7 @@
       .header.row-fluid
         .span10
           %a{ href: '/' }
-            = image_tag 'writespeakcode_logo.png', class: 'logo'
+            = image_tag 'logo/writespeakcode_logo.png', class: 'logo'
           %h1.pull-left
             Write/Speak/Code
           %small.muted empowering women software developers to become
@@ -50,7 +50,7 @@
               %ul.nav
                 %li#nav-about.dropdown
                   %a.dropdown-toggle{ href: '#', 'data-toggle' => 'dropdown' } 
-                    About
+                    Conference
                     %b.caret
                   %ul.dropdown-menu
                     %li= link_to 'Summary', '/about.html'
@@ -58,8 +58,8 @@
                     %li= link_to 'Write', '/about/write.html'
                     %li= link_to 'Speak', '/about/speak.html'
                     %li= link_to 'Code', '/about/code.html'
-                    %li.divider
-                    %li= link_to 'Organizers', '/about/organizers.html'
+                %li.divider-vertical
+                %li#nav-sponsor= link_to "Workshop", '/workshop.html'
                 %li.divider-vertical
                 %li#nav-sponsor= link_to "Testimonials", '/testimonials.html'
                 %li.divider-vertical
@@ -93,7 +93,7 @@
           %h3 Thank You
           %p
             %a{ href: 'http://pivotallabs.com' }
-              = image_tag '/images/pivotal-300.png'
+              = image_tag '/images/sponsors/pivotal-300.png'
     .row-fluid
       %footer.span12
         %ul.nav.inline
