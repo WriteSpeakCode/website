@@ -40,15 +40,17 @@ rebecca:
   name: Rebecca Miller-Webster
   url: http://www.rebeccamiller-webster.com
   image: rebecca-web1-sq.jpg
-  bio: is currently a Ruby and Javascript developer at <a href="http://couples.howaboutwe.com" target=_blank>How About We</a>. 
-    She spent the last 10 years building software in a variety of languages for 
-    large corporations, non-profits, and start-ups, including as VP of Engineering for an early-stage start up in NYC. 
+  bio: is a software engineer, conference organizer, and teacher at 
+    <a href="http://www.devbootcamp.com" target=_blank">Dev Bootcamp</a>.
+    She's been developing software professionally for over 10 years 
+    for large corporations, non-profits, and start-ups, 
+    including as VP of Engineering for an seed-stage start up in NYC. 
     Rebecca founded <a href="http://www.writespeakcode.com">Write/Speak/Code</a>, 
     co-organizes <a href="http://goruco.com" target=_blank>GORUCO</a> and makes 
     <a href="http://www.patternedapp.com" target=_blank>Patterned</a>. She also makes
     <a href="http://www.thebeccacomplex.com">music</a> and jewelry and loves cupcakes,
-    pizza, and crab rangoon. Rebecca lives in Sunnyside, Queens with her husband 
-    and black pug. And she changes her hair. A lot.
+    pizza, and crab rangoon. Rebecca lives in Sunnyside, Queens with her husband, 
+    black pug, and rescued havenese. And she changes her hair. A lot.
   pages:
     - speak
     - write
