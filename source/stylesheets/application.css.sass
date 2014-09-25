@@ -16,11 +16,6 @@ a
   &.primary
     @include colored-link($red)
 
-.btn-primary
-  @include linear-gradient(top, lighten($button_primary_bg, 5%), $button_primary_bg)
-  &:hover, &:active, &.active
-    @include linear-gradient(top, darken($button_primary_bg, 5%), darken($button_primary_bg, 5%))
-
 .btn-warning
   @include linear-gradient(top, lighten($warningText, 5%), $warningText)
   &:hover, &:active, &.active
@@ -30,6 +25,11 @@ a
   @include linear-gradient(top, lighten($infoText, 5%), $infoText)
   &:hover, &:active, &.active
     @include linear-gradient(top, darken($infoText, 5%), darken($infoText, 5%))
+
+.btn-primary, .btn-force-primary .btn-info, .btn-force-primary .btn-waring
+  @include linear-gradient(top, lighten($button_primary_bg, 5%), $button_primary_bg)
+  &:hover, &:active, &.active
+    @include linear-gradient(top, darken($button_primary_bg, 5%), darken($button_primary_bg, 5%))
 
 .hero-unit
   background-color: $offWhite
@@ -53,6 +53,7 @@ a
 
   .logo
     margin-top: 5px
+    display: block
 
   .info
     padding: 0 $paddingLarge
@@ -145,6 +146,10 @@ a
   header
     text-align: center
 
+.index
+  h3
+    color: $textColor
+
 .change_world
   position: absolute
   margin: 26px 0 0 70px
@@ -177,6 +182,15 @@ footer
 
 .index_mailchimp h2
   color: $darkGray
+
+.sponsor_list
+  img
+    max-height: 300px
+    max-width: 300px
+  li
+    margin-right: 50px
+    &:last-child
+      margin-right: 0
 
 @import "application/*"
 

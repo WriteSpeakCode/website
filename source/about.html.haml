@@ -2,29 +2,48 @@
 title: About Write/Speak/Code
 ---
 
-.lead
-  Each of the three days will focus on a single area and consist of highly interactive panels, workshops, and talks. 
-.day_summaries
-  %ul.days
-    - data.days.days.each do |name, info|
-      %li
-        .day_icon
-          %span{ class: "icon-#{info.icon}" }
-        .day_summary
-          %strong.area= name
-          %p
-            %strong.weekday= info.weekday
-            = info.summary
+.conference
+  .hero-unit
+    %h1 Conference for Women Developers
+    %h3 
+      %span.downplay Empowering ourselves to become a 
+      %br
+      %em Thought leaders, Conference Speakers and Open Source Contributors
+    %p
+      3 intense days of workshops, seminars, and talks
+      %i.icon-star-empty.text-error
+      Build a personal blueprint &amp; list of concrete next steps
+      %i.icon-star-empty.text-error
+      Take your career to the next level
 
-            %a.primary{ href: "/about/#{name}.html" }
-              Learn more
-              %i.icon-double-angle-right
+    .lead
+      Coming Spring 2015!
 
-%hr
+    %i.icon.icon-chevron-down.icon-4x.text-error
 
-%p
-  %strong= data.days[:each_day][:headline]
-  and will include:
-  %ul
-    - data.days[:each_day][:includes].each do |item|
-      %li= item
+  .day_summaries
+    %p Each of the three days will focus on a single area and consist of highly interactive panels, workshops, and talks. 
+
+    %ul.days
+      - data.days.days.each do |name, info|
+        %li
+          .day_icon
+            %span{ class: "icon-#{info.icon}" }
+          .day_summary
+            %strong.area= name
+            %p
+              %strong.weekday= info.weekday
+              = info.summary
+
+              %a.primary{ href: "/about/#{name}.html" }
+                Learn more
+                %i.icon-double-angle-right
+
+  %hr
+
+  %p
+    %strong= data.days[:each_day][:headline]
+    and will include:
+    %ul
+      - data.days[:each_day][:includes].each do |item|
+        %li= item
