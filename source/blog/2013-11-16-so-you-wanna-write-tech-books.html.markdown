@@ -6,6 +6,7 @@ author: Alli Treman
 ---
 
 # So You Wanna Write Tech Books
+
 #### by [Alli Treman](http://www.allirense.com/)
 
 The final panel of Write day moved the discussion from op-eds to technical writing, specifically technical books. The panel consisted of Alexis Goldstein, co-author of HTML5 and CSS3 for the Real World and author of Learning CSS3 Animations and Transitions, and Debra Williams-Cauley, an executive editor in the publishing industry, who attends conferences and other technical events to find new material and writers. Alexis and Debra talked to us about how to get into technical writing, and why you might want to do this kind of writing.

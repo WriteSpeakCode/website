@@ -6,7 +6,9 @@ author: Alli Treman
 ---
 
 # Yes, Virginia, you are an expert
+
 ### Write Day -- a first look from the trenches
+
 #### by [Alli Treman](http://www.allirense.com/)
 
 I can’t say how relieved I was that [The OpEd Project](http://www.theopedproject.org/) 
