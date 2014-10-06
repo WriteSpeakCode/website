@@ -5,7 +5,8 @@
     %p.lead
       October 11, 2014
       %i.icon-star-empty.muted
-      Dev Bootcamp SF, 633 Folsom St
+      %a{ href: 'https://www.google.com/maps/preview?ll=37.78471,-122.397354&z=14&t=m&hl=en-US&gl=US&mapclient=embed&q=633+Folsom+St+San+Francisco,+CA+94107' }
+        Dev Bootcamp, 633 Folsom St, 6th Fl
       %i.icon-star-empty.muted
       9am-6pm
 
@@ -13,6 +14,15 @@
     %a.btn.btn-primary.btn-large{ href: 'https://docs.google.com/forms/d/1Vv8SLPs2y3Jdrl0rcnOMkAbbggboIdWTvxlxaAJuYAI/viewform' }
       Register FREE
       %i.icon-double-angle-right
+
+  %ul.inline.workshop_sponsor_list
+    %li
+      %a{ href: 'http://devbootcamp.com' }
+        = image_tag '/images/sponsors/dbc.png'
+    %li
+      %a{ href: 'http://github.com' }
+        = image_tag '/images/sponsors/GitHub_Logo.png'
+
 
   %p
     %a{ href: "workshop.html" }
