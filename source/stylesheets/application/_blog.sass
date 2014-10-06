@@ -2,17 +2,22 @@
   h2, h3, h4
     color: $darkGray
 
+  .details
+    li
+      border-bottom: 1px dashed $yellow
+      margin-bottom: 20px
+
   .callout, .takeaway
     @extend .alert
 
-    p 
+    p
       padding: $paddingLarge
       padding-right: 0
       font-size: $fontSizeLarge
 
     &.pull-right
       margin: $paddingSmall
-    
+
   .callout
     @extend .alert-info
 
@@ -22,3 +27,22 @@
 
     p
       font-weight: bold
+
+  .tweets_blog
+    border: none
+
+    h2
+      color: $green
+      font-style: italic
+      border-top: 1px dashed $yellow
+      padding-top: 50px
+
+      &:first-child
+        border-top: none
+        padding-top: 10px
+
+    img
+      @include border-radius(6px)
+      width: 520px
+      margin: 10px
+      border: 1px solid $yellow
