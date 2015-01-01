@@ -12,6 +12,14 @@ h1, h2, h3, h4
   color: $red
   text-align: center
 
+.alert
+  &.alert-info
+    h1, h2, h3, h4
+      color: $infoText
+  &.alert-warning
+    h1, h2, h3, h4
+      color: $warningText
+
 a
   &.primary
     @include colored-link($red)
