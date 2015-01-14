@@ -6,10 +6,15 @@
 @import "bootstrap"
 @import "bootstrap-responsive"
 @import "bourbon"
+@import url(http://fonts.googleapis.com/css?family=Righteous)
 
 
-h1, h2, h3, h4
+h2, h3, h4
   color: $red
+  text-align: center
+
+h1
+  font-family: 'Righteous'
   text-align: center
 
 .alert
@@ -19,6 +24,21 @@ h1, h2, h3, h4
   &.alert-warning
     h1, h2, h3, h4
       color: $warningText
+
+.callout-font
+  font-family: 'Righteous'
+.callout-size
+  font-size: 1.2em
+.callout-color
+  color: $red
+
+.callout-primary
+  @extend .callout-font
+  @extend .callout-size
+  @extend .callout-color
+
+.callout-secondary
+  @extend .callout-font
 
 a
   &.primary
@@ -34,7 +54,7 @@ a
   &:hover, &:active, &.active
     @include linear-gradient(top, darken($infoText, 5%), darken($infoText, 5%))
 
-.btn-primary, .btn-force-primary .btn-info, .btn-force-primary .btn-waring
+.btn-primary, .btn-force-primary .btn-info, .btn-force-primary .btn-warning
   @include linear-gradient(top, lighten($button_primary_bg, 5%), $button_primary_bg)
   &:hover, &:active, &.active
     @include linear-gradient(top, darken($button_primary_bg, 5%), darken($button_primary_bg, 5%))
@@ -49,6 +69,16 @@ a
 
   #mc-embedded-subscribe-form .btn
     @extend .btn-primary
+
+.images
+  width: 100%
+  text-align: center
+  margin: $paddingLarge
+
+  img
+    border: 2px solid $red
+    width: 35%
+    margin: $paddingSmall
 
 .header
   text-align: left
